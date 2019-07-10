@@ -32,7 +32,7 @@ describe('QuizQuestion Component', () => {
     let quizQuestion;
 
     let mock_prop = {
-      instruction_text: "How many continents are there on Planet Earth?",
+      question_text: "How many continents are there on Planet Earth?",
       answer_options: ["5", "6", "7", "8"]
     }
     try {

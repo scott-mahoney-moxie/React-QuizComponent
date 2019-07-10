@@ -52,7 +52,7 @@ describe('QuizEnd Component', () => {
     let mockedPropHandler = sinon.spy()
 
     let mock_prop = {
-      instruction_text: "How many continents are there on Planet Earth?",
+      question_text: "How many continents are there on Planet Earth?",
       answer_options: ["5", "6", "7", "8"],
       answer: "5"
     }

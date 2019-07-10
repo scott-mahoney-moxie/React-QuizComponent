@@ -42,7 +42,7 @@ describe('Quiz Component', () => {
       let el = quiz.find('.QuizQuestion').getElements()[0];
       if (el.props.className == 'QuizQuestion') {
         if (el.props.children == null) {
-          assert(el.props.children == quizData.quiz_questions[0].instruction_text)
+          assert(el.props.children == quizData.quiz_questions[0].question_text)
         }
       }
     } else if (quizQuestionComponentExists) {

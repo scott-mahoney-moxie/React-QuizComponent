@@ -20,7 +20,7 @@ describe('QuizQuestion Component', () => {
     assert(quizQuestionComponentExists, "The QuizQuestion component hasn't been created yet.")
 
     let mock_prop = {
-      instruction_text: "How many continents are there on Planet Earth?",
+      question_text: "How many continents are there on Planet Earth?",
       answer_options: ["5", "6", "7", "8"]
     }
 

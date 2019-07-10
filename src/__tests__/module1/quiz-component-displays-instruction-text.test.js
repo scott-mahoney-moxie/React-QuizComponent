@@ -37,7 +37,7 @@ describe('Quiz Component', () => {
     }
 
     if (quiz.find('.QuizQuestion').length > 0) {
-      assert(quiz.find('.QuizQuestion').text() == quizData.quiz_questions[0].instruction_text, "The div with a className of `QuizQuestion` isn't displaying the correct instruction text.")
+      assert(quiz.find('.QuizQuestion').text() == quizData.quiz_questions[0].question_text, "The div with a className of `QuizQuestion` isn't displaying the correct instruction text.")
     } else if (quizQuestionComponentExists) {
       if (quiz.containsMatchingElement(<QuizQuestion />)) {
         // this block will run after @quiz-question-component-has-render-method in module 2
