@@ -1,0 +1,48 @@
+{
+  "quiz_questions": [
+    {
+      "id": 1,
+      "question_type": "SingleAnswer",
+      "question_text": "How many continents are there on Planet Earth?",
+      "presented_options": ["5", "6", "7", "8"],
+      "chosen_options": [],
+      "correct_options": ["7"],
+      "IsAnswered" : false,
+      "IsCorrect":false,
+      "examp_topics":[]
+    },
+    {
+      "id": 2,
+      "question_type": "MultipleAnswer",
+      "question_text": "How old are your kids?",
+      "presented_options": ["23", "19", "7", "8"],
+      "chosen_options": [],
+      "correct_options": ["23","19"],
+      "IsAnswered" : false,
+      "IsCorrect":false,
+      "examp_topics":[]
+    },
+    {
+      "id": 3,
+      "question_type": "True-False",
+      "question_text": "I have a short commute home in the afternoon.  True or False?",
+      "presented_options": ["True", "False"],
+      "chosen_options": [],
+      "correct_options": ["False"],
+      "IsAnswered" : false,
+      "IsCorrect":false,
+      "examp_topics":[]
+    },
+    {
+      "id": 4,
+      "question_type": "True-False",
+      "question_text": "I have a shorter commute home when I telecommute.  True or False?",
+      "presented_options": ["True", "False"],
+      "chosen_options": [],
+      "correct_options": ["True"],
+      "IsAnswered" : false,
+      "IsCorrect":false,
+      "examp_topics":[]
+    }
+  ]
+}
