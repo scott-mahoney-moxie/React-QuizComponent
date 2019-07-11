@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Quiz from './Quiz.js'
 import './App.css'
 import {AppProvider} from './AppContext'
+import './Quiz-Utils.js'
 
 let quizData = require('./quiz_target_bp.json')
 
@@ -20,9 +21,11 @@ class App extends Component {
     Questions: quizData.quiz_questions,
     NumberOfQuestions: quizData.quiz_questions.length,
     NumberOfQuestionsAnswered: 0,
-    NumberOfQuesionsCorrect:0,
-    PercentageOfCorrectAnswers: this.NumberOfQuestions == 0? 0 : (this.NumberOfQuesionsCorrect / this.NumberOfQuestions) * 100
+    NumberOfQuesionsCorrect:  0,
+    PercentageOfCorrectAnswers: this.NumberOfQuestions === 0? 0 : (this.NumberOfQuesionsCorrect / this.NumberOfQuestions) * 100
   };
+
+ 
 
   render() {
     return (

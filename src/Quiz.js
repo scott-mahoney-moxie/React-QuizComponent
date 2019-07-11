@@ -15,7 +15,18 @@ class Quiz extends Component {
     }
 
     handleResetClick(){
-        this.setState({quiz_position: 1, questions_correct: 0, number_of_questions: this.props.quiz.Questions.length})
+        this.props.quiz.Questions.forEach((item) => {
+            item.IsAnswered = false;
+            item.IsCorrect = false;
+            item.chosen_options = [];
+          })
+
+        this.setState({
+                quiz_position: 1,
+                 questions_correct: 0, 
+                 number_of_questions: this.props.quiz.Questions.length
+                })
+
     }
 
     showNextQuestion(){
@@ -25,9 +36,10 @@ class Quiz extends Component {
     }
     showPrevQuestion(){
         this.setState((state)=>{
-            return {quiz_position:state.quiz_position == 1 ? 1 : state.quiz_position - 1}
+            return {quiz_position:state.quiz_position === 1 ? 1 : state.quiz_position - 1}
         })
     }
+
 
     render(){
         const isQuizEnd = ((this.state.quiz_position -1) === this.props.quiz.Questions.length)
@@ -36,6 +48,7 @@ class Quiz extends Component {
                 <div>
                     {isQuizEnd ?   
                     <QuizEnd quiz={this.props.quiz} resetClickHandler={this.handleResetClick.bind(this)} /> :
+
                     <QuizQuestion quiz={this.props.quiz}  
                         quiz_question={this.props.quiz.Questions[this.state.quiz_position -1]} 
                         showNextQuestionHandler={this.showNextQuestion.bind(this)} 

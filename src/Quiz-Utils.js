@@ -8,7 +8,7 @@ Array.prototype.equals = function (array) {
         return false;
 
     // compare lengths - can save a lot of time 
-    if (this.length != array.length){
+    if (this.length !== array.length){
         console.log('The chosen options contains different set of options than the correct set.');
         return false;
     }
@@ -23,6 +23,24 @@ Array.prototype.equals = function (array) {
     }       
     return true;
 }
+
+Array.prototype.sum = function (prop) {
+    var total = 0
+    for ( var i = 0, _len = this.length; i < _len; i++ ) {
+        total += this[i][prop]
+    }
+    return total
+}
+
+Array.prototype.sumCheckBoxes = function (prop) {
+    var total = 0
+    for ( var i = 0, _len = this.length; i < _len; i++ ) {
+        total += this[i][prop] ? 1: 0;
+    }
+    return total
+}
+
+
 // Hide method from for-in loops
 Object.defineProperty(Array.prototype, "equals", {enumerable: false});
 

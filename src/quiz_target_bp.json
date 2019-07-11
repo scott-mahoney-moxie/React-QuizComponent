@@ -9,7 +9,7 @@
       "correct_options": ["7 - Continents"],
       "IsAnswered" : false,
       "IsCorrect":false,
-      "examp_topics":[]
+      "exam_topics":[]
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "correct_options": ["23","19"],
       "IsAnswered" : false,
       "IsCorrect":false,
-      "examp_topics":[]
+      "exam_topics":[]
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "correct_options": ["False"],
       "IsAnswered" : false,
       "IsCorrect":false,
-      "examp_topics":[]
+      "exam_topics":[]
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "correct_options": ["True"],
       "IsAnswered" : false,
       "IsCorrect":false,
-      "examp_topics":[]
+      "exam_topics":[]
     }
   ]
 }

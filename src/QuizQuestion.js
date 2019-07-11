@@ -1,17 +1,12 @@
 import React, {Component} from 'react'
 import QuizQuestionButton from './QuizQuestionButton'
 import QuizQuestionCheckBoxOption from './QuizQuestionCheckBoxOption'
-import {AppConsumer} from './AppContext'
-import QuizUtils from './Quiz-Utils.js'
-
-
 
 
 class QuizQuestion extends Component{
 
 constructor(props){
     super(props)
-
 }
 
 handleClick(button_text){
