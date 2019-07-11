@@ -20,14 +20,27 @@ class Quiz extends Component {
             item.IsCorrect = false;
             item.chosen_options = [];
           })
+          
+        this.props.quiz.IsInReviewMode = false;
 
         this.setState({
                 quiz_position: 1,
                  questions_correct: 0, 
-                 number_of_questions: this.props.quiz.Questions.length
+                 number_of_questions: this.props.quiz.Questions.length,
+                 IsInReviewMode:  false
                 })
 
     }
+
+    handleTestReviewClick(){
+        this.setState({
+                quiz_position: 1,
+                 number_of_questions: this.props.quiz.Questions.length,
+                 IsInReviewMode: true
+                })
+
+    }
+
 
     showNextQuestion(){
         this.setState((state)=>{
@@ -47,7 +60,9 @@ class Quiz extends Component {
         return (
                 <div>
                     {isQuizEnd ?   
-                    <QuizEnd quiz={this.props.quiz} resetClickHandler={this.handleResetClick.bind(this)} /> :
+                    <QuizEnd quiz={this.props.quiz} resetClickHandler={this.handleResetClick.bind(this)}
+                    reviewClickHandler={this.handleTestReviewClick.bind(this)}
+                    /> :
 
                     <QuizQuestion quiz={this.props.quiz}  
                         quiz_question={this.props.quiz.Questions[this.state.quiz_position -1]} 

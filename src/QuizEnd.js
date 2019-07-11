@@ -32,6 +32,14 @@ class QuizEnd extends Component{
         this.props.resetClickHandler()
     }
 
+
+    handleTestReviewClick(){
+        this.props.quiz.IsInReviewMode= true;
+        this.props.reviewClickHandler()
+    }
+
+
+
     render(){
         return(
             <div>
@@ -41,9 +49,12 @@ class QuizEnd extends Component{
                 <h2>Your score :{this.CalcPercentageCorrect()} %</h2>
                 <h3>Number of Questions: {this.props.quiz.NumberOfQuestions}</h3>
                 <h3>Number of Correct Answers:  {this.CalculateCorrect()} </h3>
-
+                
+                <a href='#' onClick={this.handleTestReviewClick.bind(this)}>Review Results</a>
+                <br/>
 
                 <a href='#' onClick={this.handleResetClick.bind(this)}>Reset Quiz</a>
+
             </div>
         )
     }

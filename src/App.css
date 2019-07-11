@@ -33,3 +33,16 @@ button {
 .error {
   color: red;
 }
+
+.CorrectAnswer {
+  border: 1px dotted black;
+  outline-style: solid;
+  outline-color: green;
+}
+
+.InCorrectAnswer {
+  border: 1px dotted black;
+  outline-style: solid;
+  outline-color: red;
+}
+

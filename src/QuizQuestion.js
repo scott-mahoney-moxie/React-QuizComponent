@@ -61,7 +61,7 @@ render(){
             <section>
                 <ul>
                     {this.props.quiz_question.presented_options.map((presented_option, index) =>{
-                        return <QuizQuestionCheckBoxOption 
+                        return <QuizQuestionCheckBoxOption quiz ={this.props.quiz}
                                     quiz_question={this.props.quiz_question} 
                                     key={this.props.quiz_question.id+'_'+index} button_text={presented_option}
                                     selectionChangedHander={this.handleSelectionChanged.bind(this)}
