@@ -17,6 +17,7 @@ constructor(props){
 handleClick(button_text){
     this.handleCheckAnswer(button_text);
     if(button_text === "Next"){ //this.props.quiz_question.correct_otions[0]
+        
         this.props.showNextQuestionHandler()
     }else{
         this.props.showPrevQuestionHandler()
@@ -50,9 +51,13 @@ handleSelectionChanged(chosenOption, isChosen){
         console.log(this.props.quiz_question.chosen_options);
     }
     
+    
 }
 
 render(){
+
+    const isStudyGuide = (this.props.quiz.TestType === "StudyGuide");
+
     return(
         <main>
             <section>
@@ -61,9 +66,11 @@ render(){
             <section>
                 <ul>
                     {this.props.quiz_question.presented_options.map((presented_option, index) =>{
-                        return <QuizQuestionCheckBoxOption key={index} button_text={presented_option}
-                                    clickHandler={this.handleClick.bind(this)}
+                        return <QuizQuestionCheckBoxOption 
+                                    quiz_question={this.props.quiz_question} 
+                                    key={this.props.quiz_question.id+'_'+index} button_text={presented_option}
                                     selectionChangedHander={this.handleSelectionChanged.bind(this)}
+                                   shouldBeChecked = {this.props.quiz_question.chosen_options.indexOf(presented_option) >= 0 ?true: false}
                                 />
                     })}
                    
@@ -71,7 +78,7 @@ render(){
             </section>
             <div >
             <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
-            <QuizQuestionButton button_text="Check my Answer" clickHandler={this.handleCheckAnswer.bind(this)} />
+            {isStudyGuide ? <QuizQuestionButton button_text="Check my Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
             <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />
             </div>
 

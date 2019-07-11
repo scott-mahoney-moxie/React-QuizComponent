@@ -4,9 +4,9 @@
       "id": 1,
       "question_type": "SingleAnswer",
       "question_text": "How many continents are there on Planet Earth?",
-      "presented_options": ["5", "6", "7", "8"],
+      "presented_options": ["5 - Continents", "6 - Continents", "7 - Continents", "8 - Continents"],
       "chosen_options": [],
-      "correct_options": ["7"],
+      "correct_options": ["7 - Continents"],
       "IsAnswered" : false,
       "IsCorrect":false,
       "examp_topics":[]

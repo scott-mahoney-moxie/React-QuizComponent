@@ -10,9 +10,7 @@ class Quiz extends Component {
     constructor(props){
         super(props)
         this.state = {
-                        quiz_position:1,
-                        questions_correct: 0,
-                        number_of_questions: this.props.quiz.Questions.length
+                        quiz_position:1
                     }
     }
 
