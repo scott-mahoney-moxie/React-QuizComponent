@@ -48,16 +48,21 @@ class QuizQuestionCheckBoxOption extends Component{
 
     getStyle(){
         console.log('getStyle: ' + this.props.quiz.IsInReviewMode)
+
         if (! this.props.quiz.IsInReviewMode){
           return null
         }
-        if (this.props.quiz_question.correct_options.indexOf(this.props.button_text) >=0 ){
+
+        if (this.props.quiz_question.correct_options.indexOf(this.props.button_text) >=0 &&
+            this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0){
+          return 'SelectedCorrectAnswer' 
+        }else if (this.props.quiz_question.correct_options.indexOf(this.props.button_text) >=0 ){
           return 'CorrectAnswer' 
         }else if (this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 ){
           return 'InCorrectAnswer'
         }
 
-        return null
+        return 'button'
     }
 
     render(){

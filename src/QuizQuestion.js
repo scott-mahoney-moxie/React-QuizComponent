@@ -55,7 +55,7 @@ render(){
 
     return(
         <main>
-            <section>
+            <section className='QuizQuestion'>
                 <p>{this.props.quiz_question.question_text}</p>
             </section>
             <section>
@@ -71,7 +71,7 @@ render(){
                    
                 </ul>
             </section>
-            <div >
+            <div className='buttons'>
             <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
             {isStudyGuide ? <QuizQuestionButton button_text="Check my Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
             <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />

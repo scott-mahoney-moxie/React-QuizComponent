@@ -3,6 +3,7 @@
   justify-content: center;
   font-size: 2em;
   text-align: center;
+  padding: 20px;
 }
 .QuizEnd {
   display: flex;
@@ -22,27 +23,39 @@ ul {
 }
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+
 }
 button {
-  margin: 0.6em auto;
+  margin: 30px;
+  padding: 10px;
   font-size: 1.5em;
   display: block;
+  
 }
 .error {
   color: red;
 }
 
-.CorrectAnswer {
+.SelectedCorrectAnswer {
   border: 3px solid green;
   outline-style: solid;
   outline-color: green;
 }
 
-.InCorrectAnswer {
-  border: 1px dotted red;
+.CorrectAnswer {
+  border: 3px solid green;
   outline-style: dotted;
+  outline-color: green;
+}
+
+.InCorrectAnswer {
+  border: 2px solid red;
+  outline-style: solid;
   outline-color: red;
 }
 
