@@ -35,14 +35,14 @@ button {
 }
 
 .CorrectAnswer {
-  border: 1px dotted black;
+  border: 3px solid green;
   outline-style: solid;
   outline-color: green;
 }
 
 .InCorrectAnswer {
-  border: 1px dotted black;
-  outline-style: solid;
+  border: 1px dotted red;
+  outline-style: dotted;
   outline-color: red;
 }
 
