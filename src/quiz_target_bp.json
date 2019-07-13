@@ -1,4 +1,12 @@
 {
+  "quiz_name": "Adobe Target Business Practicitoner",
+  "quiz_breakdown":{
+    "categories" : [{
+        "name": null,
+        "percentage_of_quiz_questions" : 0
+    }]
+  },
+
   "quiz_questions": [
     {
       "id": 1,
