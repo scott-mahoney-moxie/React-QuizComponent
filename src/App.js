@@ -10,6 +10,7 @@ class App extends Component {
 
   state = {
     TestType : 'StudyGuide', // 'Quiz',Timed-Test','StudyGuide'
+    quiz_name: quizData.quiz_name,
     PercentageCorrectForPassingScore: 70,
     IsTimedTest: false,
     SecondsAllotedPerQuestion: 60,
@@ -18,6 +19,7 @@ class App extends Component {
     IsStarted: false,
     IsCompleted: false,
     IsInReviewMode: false,
+    CurrentQuestionNumber: 0,
     Questions: quizData.quiz_questions,
     NumberOfQuestions: quizData.quiz_questions.length,
     NumberOfQuestionsAnswered: 0,

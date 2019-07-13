@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+
+import QuizHeader from './QuizHeader.js'
 import QuizQuestion from './QuizQuestion.js'
 import QuizEnd from './QuizEnd.js'
 
@@ -20,7 +22,7 @@ class Quiz extends Component {
             item.IsCorrect = false;
             item.chosen_options = [];
           })
-          
+
         this.props.quiz.IsInReviewMode = false;
 
         this.setState({
@@ -59,6 +61,7 @@ class Quiz extends Component {
 
         return (
                 <div>
+                     <QuizHeader quiz={this.props.quiz} quiz_position={this.state.quiz_position} />
                     {isQuizEnd ?   
                     <QuizEnd quiz={this.props.quiz} resetClickHandler={this.handleResetClick.bind(this)}
                     reviewClickHandler={this.handleTestReviewClick.bind(this)}

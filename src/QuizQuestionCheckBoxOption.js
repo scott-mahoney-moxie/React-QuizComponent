@@ -4,8 +4,10 @@ class QuizQuestionCheckBoxOption extends Component{
     constructor(props){
         super(props);
         console.log('constructor')
-        this.state = { checked :  this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0,
-          IsInReviewMode: this.props.quiz_question.IsInReviewMode   }
+        this.state = { 
+            checked :  this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0,
+            IsInReviewMode: this.props.quiz_question.IsInReviewMode   
+        }
         console.log('constructor state: ' + this.state.checked)
     }
 
