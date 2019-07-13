@@ -9,7 +9,7 @@ let quizData = require('./quiz_target_bp.json')
 class App extends Component {
 
   state = {
-    TestType : 'Quiz', // 'Quiz',Timed-Test','StudyGuide'
+    TestType : 'StudyGuide', // 'Quiz',Timed-Test','StudyGuide'
     PercentageCorrectForPassingScore: 70,
     IsTimedTest: false,
     SecondsAllotedPerQuestion: 60,

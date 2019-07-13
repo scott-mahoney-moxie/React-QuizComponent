@@ -9,6 +9,7 @@
       "correct_options": ["7 - Continents"],
       "IsAnswered" : false,
       "IsCorrect":false,
+      "IsInReviewMode": false,
       "exam_topics":[]
     },
     {
@@ -20,6 +21,7 @@
       "correct_options": ["23","19"],
       "IsAnswered" : false,
       "IsCorrect":false,
+      "IsInReviewMode": false,
       "exam_topics":[]
     },
     {
@@ -31,6 +33,7 @@
       "correct_options": ["False"],
       "IsAnswered" : false,
       "IsCorrect":false,
+      "IsInReviewMode": false,
       "exam_topics":[]
     },
     {

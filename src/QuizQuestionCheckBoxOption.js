@@ -4,7 +4,8 @@ class QuizQuestionCheckBoxOption extends Component{
     constructor(props){
         super(props);
         console.log('constructor')
-        this.state = { checked :  this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0   }
+        this.state = { checked :  this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0,
+          IsInReviewMode: this.props.quiz_question.IsInReviewMode   }
         console.log('constructor state: ' + this.state.checked)
     }
 
@@ -47,9 +48,10 @@ class QuizQuestionCheckBoxOption extends Component{
       }
 
     getStyle(){
-        console.log('getStyle: ' + this.props.quiz.IsInReviewMode)
+        console.log('quiz review mode: ' + this.props.quiz.IsInReviewMode)
+        console.log('question review mode: ' + this.props.quiz_question.IsInReviewMode)
 
-        if (! this.props.quiz.IsInReviewMode){
+        if (! this.props.quiz.IsInReviewMode && !this.props.quiz_question.IsInReviewMode){
           return null
         }
 
@@ -66,9 +68,15 @@ class QuizQuestionCheckBoxOption extends Component{
     }
 
     render(){
+        console.log('render option')
         return(
             <span   >
-             <button className={this.getStyle()} onClick={this.toggleButton.bind(this)}>{ this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 ? this.checkmark() : this.emptyMark()  } {this.props.button_text}</button>
+             <button className={this.getStyle()} 
+                      onClick={this.toggleButton.bind(this)}
+                      data-IsInReview={this.state.IsInReviewMode}>
+                      
+                      { this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 ? this.checkmark() : this.emptyMark()  } {this.props.button_text}
+                      </button>
              </span>
 
         )

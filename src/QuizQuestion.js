@@ -6,16 +6,21 @@ import QuizQuestionCheckBoxOption from './QuizQuestionCheckBoxOption'
 class QuizQuestion extends Component{
 
 constructor(props){
-    super(props)
+    super(props);
+    this.state =  {
+        IsInReviewMode: false
+    }
+
 }
 
 handleClick(button_text){
     this.handleCheckAnswer(button_text);
     if(button_text === "Next"){ //this.props.quiz_question.correct_otions[0]
-        
+        this.props.quiz_question.IsInReviewMode = false;
         this.props.showNextQuestionHandler()
     }else{
         this.props.showPrevQuestionHandler()
+        this.props.quiz_question.IsInReviewMode = false;
     }
 }
 
@@ -23,11 +28,19 @@ handleCheckAnswer(button_text){
     console.log('Correct option(s): ' + this.props.quiz_question.correct_options);
     console.log('chosen options: ' + this.props.quiz_question.chosen_options);
 
+    console.log('this.props.quiz_question.IsInReviewMode :  ' + this.props.quiz_question.IsInReviewMode );
+    this.props.quiz_question.IsInReviewMode = true;
+    this.setState({ IsInReviewMode: true });
+
+    console.log('this.props.quiz_question.IsInReviewMode :  ' + this.props.quiz_question.IsInReviewMode );
+    console.log('this.state.IsInReviewMode :  ' + this.state.IsInReviewMode );
+
     this.props.quiz_question.IsAnswered = this.props.quiz_question.chosen_options.length > 0 ? true: false;
 
     this.props.quiz_question.IsCorrect = this.props.quiz_question.correct_options.equals(this.props.quiz_question.chosen_options);
     console.log('Is ChosenOptions === CorrectOPtions ? ' + this.props.quiz_question.IsCorrect  );
 
+    this.render();
     
 }
 
@@ -50,7 +63,7 @@ handleSelectionChanged(chosenOption, isChosen){
 }
 
 render(){
-
+    console.log('Question render....')
     const isStudyGuide = (this.props.quiz.TestType === "StudyGuide");
 
     return(
@@ -64,6 +77,7 @@ render(){
                         return <QuizQuestionCheckBoxOption quiz ={this.props.quiz}
                                     quiz_question={this.props.quiz_question} 
                                     key={this.props.quiz_question.id+'_'+index} button_text={presented_option}
+                                    IsInReviewMode= {this.state.IsInReviewMode}
                                     selectionChangedHander={this.handleSelectionChanged.bind(this)}
                                    shouldBeChecked = {this.props.quiz_question.chosen_options.indexOf(presented_option) >= 0 ?true: false}
                                 />
