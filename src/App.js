@@ -14,7 +14,7 @@ class App extends Component {
     super(props)
     this.state = {
  
-      TestType : 'StudyGuide', // 'Quiz',Timed-Test','StudyGuide'
+      TestType : 'Quiz', // 'Quiz',Timed-Test','StudyGuide'
       quiz_name: quizData.quiz_name,
       PercentageCorrectForPassingScore: 70,
       IsTimedTest: false,
@@ -23,7 +23,7 @@ class App extends Component {
       TimeRemaining: null,
       IsStarted: false,
       IsCompleted: false,
-      IsInReviewMode: false,
+      IsInReviewMode: this.TestType === 'StudyGuide'? true : false,
       CurrentQuestionNumber: 0,
       Questions: quizData.quiz_questions,
       NumberOfQuestions: quizData.quiz_questions.length,
@@ -32,6 +32,7 @@ class App extends Component {
       PercentageOfCorrectAnswers: this.NumberOfQuestions === 0? 0 : (this.NumberOfQuesionsCorrect / this.NumberOfQuestions) * 100
     };
 
+    this.state.IsInReviewMode = this.state.TestType === 'StudyGuide';
     this.state.Questions = this.state.Questions.shuffle();
     this.state.Questions.map( (arr) => {arr.presented_options =  arr.presented_options.shuffle()});
     

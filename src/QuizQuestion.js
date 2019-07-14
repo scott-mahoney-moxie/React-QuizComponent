@@ -8,7 +8,7 @@ class QuizQuestion extends Component{
 constructor(props){
     super(props);
     this.state =  {
-        IsInReviewMode: false 
+        IsInReviewMode: this.props.quiz.TestType === "StudyGuide" ? true: false 
     }
 
 }
@@ -17,11 +17,11 @@ handleClick(button_text){
     this.handleCheckAnswer(button_text);
 
     if(button_text === "Next"){ //this.props.quiz_question.correct_otions[0]
-        this.props.quiz_question.IsInReviewMode = false;
+        this.props.quiz_question.IsInReviewMode = this.props.quiz.TestType === "StudyGuide" ? true: false;
         this.props.showNextQuestionHandler()
     }else{
         this.props.showPrevQuestionHandler()
-        this.props.quiz_question.IsInReviewMode = false;
+        this.props.quiz_question.IsInReviewMode = this.props.quiz.TestType === "StudyGuide" ? true: false;
     }
 }
 
@@ -65,7 +65,9 @@ handleSelectionChanged(chosenOption, isChosen){
 
 render(){
     console.log('Question render....')
-    const isStudyGuide = (this.props.quiz.TestType === "StudyGuide");
+    const isQuiz = (this.props.quiz.TestType === "Quiz");
+    this.props.quiz_question.IsInReviewMode = this.isStudyGuide || this.props.quiz_question.IsInReviewMode ;
+    this.props.quiz.IsInReviewMode = this.isStudyGuide || this.props.quiz.IsInReviewMode ;
 
     return(
         <main>
@@ -78,7 +80,7 @@ render(){
                         return <QuizQuestionCheckBoxOption quiz ={this.props.quiz}
                                     quiz_question={this.props.quiz_question} 
                                     key={this.props.quiz_question.id+'_'+index} button_text={presented_option}
-                                    IsInReviewMode= {this.state.IsInReviewMode}
+                                    IsInReviewMode= {this.isStudyGuide || this.state.IsInReviewMode}
                                     selectionChangedHander={this.handleSelectionChanged.bind(this)}
                                    shouldBeChecked = {this.props.quiz_question.chosen_options.indexOf(presented_option) >= 0 ?true: false}
                                 />
@@ -88,7 +90,7 @@ render(){
             </section>
             <div className='buttons'>
             <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
-            {isStudyGuide ? <QuizQuestionButton button_text="Check my Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
+            {isQuiz ? <QuizQuestionButton button_text="Show Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
             <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />
             </div>
 

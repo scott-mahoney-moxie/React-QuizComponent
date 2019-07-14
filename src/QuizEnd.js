@@ -2,10 +2,6 @@ import React, {Component} from 'react'
 
 class QuizEnd extends Component{
 
-    constructor(props){
-        super(props)
-
-    }
 
     CalculateNumberOfQuestionsAnswered(){
         var total = 0;

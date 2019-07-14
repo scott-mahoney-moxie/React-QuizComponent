@@ -74,8 +74,7 @@ class QuizQuestionCheckBoxOption extends Component{
         return(
             <span   >
              <button className={this.getStyle()} 
-                      onClick={this.toggleButton.bind(this)}
-                      data-IsInReview={this.state.IsInReviewMode}>
+                      onClick={this.toggleButton.bind(this)}>
                       
                       { this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 ? this.checkmark() : this.emptyMark()  } {this.props.button_text}
                       </button>
