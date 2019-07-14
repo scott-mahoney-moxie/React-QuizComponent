@@ -22,6 +22,10 @@ class Quiz extends Component {
             item.IsCorrect = false;
             item.chosen_options = [];
           })
+        
+        this.props.quiz.Questions = this.props.quiz.Questions.shuffle();
+        this.props.quiz.Questions.map( (arr) => {arr.presented_options =  arr.presented_options.shuffle()});
+
 
         this.props.quiz.IsInReviewMode = false;
 

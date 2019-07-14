@@ -40,6 +40,17 @@ Array.prototype.sumCheckBoxes = function (prop) {
     return total
 }
 
+Array.prototype.shuffle = function () {
+    var arr = this;
+    for (let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+      [arr[i], arr[j]] = [arr[j], arr[i]]; // swap elements
+    }
+    return arr;
+  }
+
+
+
 
 // Hide method from for-in loops
 Object.defineProperty(Array.prototype, "equals", {enumerable: false});

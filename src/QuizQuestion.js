@@ -8,13 +8,14 @@ class QuizQuestion extends Component{
 constructor(props){
     super(props);
     this.state =  {
-        IsInReviewMode: false
+        IsInReviewMode: false 
     }
 
 }
 
 handleClick(button_text){
     this.handleCheckAnswer(button_text);
+
     if(button_text === "Next"){ //this.props.quiz_question.correct_otions[0]
         this.props.quiz_question.IsInReviewMode = false;
         this.props.showNextQuestionHandler()
