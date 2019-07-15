@@ -14,7 +14,7 @@ class App extends Component {
     super(props)
     this.state = {
  
-      TestType : 'Quiz', // 'Quiz',Timed-Test','StudyGuide'
+      TestType : 'Test', // 'Quiz',  'Test','StudyGuide'
       quiz_name: quizData.quiz_name,
       PercentageCorrectForPassingScore: 70,
       IsTimedTest: false,

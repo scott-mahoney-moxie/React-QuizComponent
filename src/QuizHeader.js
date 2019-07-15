@@ -5,7 +5,7 @@ class QuizHeader extends Component{
 
     getResult(){
         return (
-            this.props.quiz_position <= this.props.quiz.NumberOfQuestions-1 ? 
+            this.props.quiz_position <= this.props.quiz.NumberOfQuestions ? 
             this.props.quiz.Questions[this.props.quiz_position-1].IsCorrect ?
             <span style={{color:'green'}}>Correct</span>
             :<span style={{color:'red'}}>Incorrect</span>
