@@ -90,10 +90,11 @@ render(){
             </section>
             <div className='buttons'>
             <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
-            {isQuiz ? <QuizQuestionButton button_text="Show Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
             <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />
             </div>
-
+            <div className='buttons'>
+            {isQuiz ? <QuizQuestionButton button_text="Show Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
+            </div>
         </main>
     )
 }

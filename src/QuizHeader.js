@@ -15,13 +15,13 @@ class QuizHeader extends Component{
 
     render(){
         return(
-            <div>
+            <div style={{marginLeft:10, marginRight:30}}>
                 <h1>{this.props.quiz.quiz_name} - {this.props.quiz.TestType}</h1>
                 {this.props.quiz_position <= this.props.quiz.NumberOfQuestions ?
                     <h2>Question # {this.props.quiz_position} out of {this.props.quiz.NumberOfQuestions} </h2>
                 : null}
                 {this.props.quiz.IsInReviewMode ?
-                <h2>This Question/Answer is : {this.getResult()}
+                <h2>This question/response is : {this.getResult()}
                 </h2>
 
                 :null

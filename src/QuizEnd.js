@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import QuizQuestionButton from './QuizQuestionButton'
 
 class QuizEnd extends Component{
 
@@ -52,7 +53,7 @@ class QuizEnd extends Component{
 
     render(){
         return(
-            <div>
+            <div style={{marginLeft:10}}>
                 <h1>{this.props.quiz.TestType} Results:</h1>
                 
                 <h2>Your score :{this.CalcPercentageCorrect()} %</h2>
@@ -63,13 +64,14 @@ class QuizEnd extends Component{
 
                 { this.props.quiz.TestType != 'Test' ?
                     <div><h4>Number of Questions Answered : {this.CalculateNumberOfQuestionsAnswered()}</h4>
-                    <h4>Percentage correct, based on Questions Answered :{this.CalcPercentageCorrectOnlyForQuestionsAnswered()} %</h4></div>
+                    <h4>Percentage correct :{this.CalcPercentageCorrectOnlyForQuestionsAnswered()} % </h4> (based on Questions Answered )</div>
+                   
                 : null }
 
-                <a href='#' onClick={this.handleTestReviewClick.bind(this)}>Review Results</a>
-                <br/>
 
-                <a href='#' onClick={this.handleResetClick.bind(this)}>Reset Quiz</a>
+                <QuizQuestionButton button_text="Review Results" clickHandler={this.handleTestReviewClick.bind(this)} />
+                <QuizQuestionButton button_text="Reset Quiz" clickHandler={this.handleResetClick.bind(this)}/>
+
 
             </div>
         )
