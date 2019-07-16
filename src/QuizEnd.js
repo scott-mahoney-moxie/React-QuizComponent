@@ -30,7 +30,7 @@ class QuizEnd extends Component{
         console.log ('this.props.quiz.NumberOfQuestions : ' + this.props.quiz.NumberOfQuestions )
         console.log('result is: ' +(this.CalculateCorrect() / this.props.quiz.NumberOfQuestions))
         console.log ('this.props.quiz.PercentageCorrectForPassingScore : ' + this.props.quiz.PercentageCorrectForPassingScore )
-        return (this.CalculateCorrect() / this.props.quiz.NumberOfQuestions) * 100
+        return ((this.CalculateCorrect() / this.props.quiz.NumberOfQuestions) * 100).toFixed(0)
     }
 
     CalcPercentageCorrectOnlyForQuestionsAnswered(){

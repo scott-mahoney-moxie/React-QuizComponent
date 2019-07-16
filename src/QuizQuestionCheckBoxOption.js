@@ -18,10 +18,10 @@ class QuizQuestionCheckBoxOption extends Component{
         var newCheckedValue = !checkedValue;
         console.log('newCheckedValue: ' + newCheckedValue)
         this.setState({ checked: newCheckedValue }) ;
-        this.state.checked = newCheckedValue;
+        //this.state.checked = newCheckedValue;
         console.log('check option has changed to: ' + this.state.checked);
         console.log('now send to parent handler')
-        this.props.selectionChangedHander(this.props.button_text, this.state.checked)
+        this.props.selectionChangedHander(this.props.button_text, newCheckedValue)
 }
 
     handleClick(){
