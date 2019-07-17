@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import QuizHeader from './QuizHeader.js'
+import QuizFooter from './QuizFooter.js'
 import QuizQuestion from './QuizQuestion.js'
 import QuizEnd from './QuizEnd.js'
 
@@ -78,6 +79,7 @@ class Quiz extends Component {
                         showPrevQuestionHandler={this.showPrevQuestion.bind(this)}
                         />
                     }
+                    <QuizFooter quiz={this.props.quiz} quiz_position={this.state.quiz_position} />
                 </div>
         )
     }

@@ -29,12 +29,6 @@ class QuizHeader extends Component{
                         :null
                         
                         }
-
-                        <i>( This question was sourced from : {this.props.quiz.Questions[this.props.quiz_position-1].question_source} 
-                            {this.props.quiz.Questions[this.props.quiz_position-1].exam_topics !== null ?<div>- Exam Category Topic - {this.props.quiz.Questions[this.props.quiz_position-1].exam_topics}</div>
-                            : null}
-                        )</i>
-                        
                     </div>
                 : null}
             </div>
