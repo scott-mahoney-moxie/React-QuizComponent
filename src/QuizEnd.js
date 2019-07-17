@@ -7,7 +7,7 @@ class QuizEnd extends Component{
     CalculateNumberOfQuestionsAnswered(){
         var total = 0;
         console.log('Calc :' + this.props.quiz)
-        for ( var i = 0, _len = this.props.quiz.Questions.length; i < _len; i++ ) {
+        for ( var i = 0, _len = this.props.quiz.NumberOfQuestions; i < _len; i++ ) {
           console.log('** ' + this.props.quiz.Questions[i]['IsAnswered'])
           total += this.props.quiz.Questions[i]['IsAnswered'] ? 1: 0;
         }
@@ -17,7 +17,7 @@ class QuizEnd extends Component{
     CalculateCorrect(){
         var total = 0;
         console.log('Calc :' + this.props.quiz)
-        for ( var i = 0, _len = this.props.quiz.Questions.length; i < _len; i++ ) {
+        for ( var i = 0, _len = this.props.quiz.NumberOfQuestions; i < _len; i++ ) {
           console.log('** ' + this.props.quiz.Questions[i]['IsCorrect'])
           total += this.props.quiz.Questions[i]['IsCorrect'] ? 1: 0;
         }
