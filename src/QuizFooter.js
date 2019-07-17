@@ -4,7 +4,11 @@ class QuizFooter extends Component{
 
 
     render(){
+        const isQuizEnd = ((this.props.quiz_position ) > this.props.quiz.NumberOfQuestions)
+
         return(
+            isQuizEnd ? null : 
+            
             <div style={{marginLeft:10, marginRight:30, fontStyle:'italic', fontSize:'1em'}}>
                 <div>
                  <div style={{fontWeight:'bold'}} >Question Source :</div>{this.props.quiz.Questions[this.props.quiz_position-1].question_source}</div>
@@ -13,6 +17,7 @@ class QuizFooter extends Component{
                 : null}
                         
             </div>
+                
         )
     }
 
