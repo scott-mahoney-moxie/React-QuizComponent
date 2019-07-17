@@ -14,7 +14,7 @@ class App extends Component {
     super(props)
     this.state = {
  
-      TestType : 'Quiz', // 'Quiz',  'Test','StudyGuide'
+      TestType : 'StudyGuide', // 'Quiz',  'Test','StudyGuide'
       quiz_name: quizData.quiz_name,
       PercentageCorrectForPassingScore: 68, // Passing score:(550) All Adobe exams are reported on a scale of 300 to 700. The passing score for each exam is 550
       IsTimedTest: false,

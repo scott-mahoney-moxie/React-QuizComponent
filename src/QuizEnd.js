@@ -35,7 +35,7 @@ class QuizEnd extends Component{
 
     CalcPercentageCorrectOnlyForQuestionsAnswered(){
 
-        return  ((this.CalculateCorrect() / this.CalculateNumberOfQuestionsAnswered()) * 100).toFixed(0)
+        return  this.CalculateNumberOfQuestionsAnswered() ==0? null : ((this.CalculateCorrect() / this.CalculateNumberOfQuestionsAnswered()) * 100).toFixed(0)
     }
 
 
