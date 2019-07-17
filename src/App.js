@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Quiz from './Quiz.js'
 import QuizStart from './QuizStart.js'
 import './App.css'
-import {AppProvider} from './AppContext'
 import './Quiz-Utils.js'
 
 let quizData = require('./quiz_target_bp.json')
@@ -63,14 +62,14 @@ handleNumberOfQuestionsChanged(inputNumberOfQuestions){
 
   render() {
     return (
-      <AppProvider>
-        {this.state.IsStarted ? 
+
+        this.state.IsStarted ? 
           <Quiz quiz={this.state} /> :          
           <QuizStart quiz={this.state} 
             numberOfQuestionsChangedHandler={this.handleNumberOfQuestionsChanged.bind(this)}
             startClickHandler={this.handleTestStartClick.bind(this)}  
-            resetClickHandler={this.handleTestResetClick.bind(this)} /> }
-      </AppProvider>
+            resetClickHandler={this.handleTestResetClick.bind(this)} /> 
+
     )
   }
 }
