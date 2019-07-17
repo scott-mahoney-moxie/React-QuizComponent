@@ -16,9 +16,9 @@ class App extends Component {
  
       TestType : 'Quiz', // 'Quiz',  'Test','StudyGuide'
       quiz_name: quizData.quiz_name,
-      PercentageCorrectForPassingScore: 70,
+      PercentageCorrectForPassingScore: 68, // Passing score:(550) All Adobe exams are reported on a scale of 300 to 700. The passing score for each exam is 550
       IsTimedTest: false,
-      SecondsAllotedPerQuestion: 60,
+      SecondsAllotedPerQuestion: 75, // 80 minutes total
       TimeStarted: null,
       TimeRemaining: null,
       IsStarted: false,

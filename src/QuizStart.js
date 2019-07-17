@@ -7,7 +7,7 @@ class QuizStart extends Component{
         super(props)
 
         this.state = {
-            quizQuestionLength: 50
+            quizQuestionLength: 65
         }
     }
 

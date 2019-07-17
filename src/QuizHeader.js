@@ -22,7 +22,7 @@ class QuizHeader extends Component{
                     <div>
                     <h2>Question # {this.props.quiz_position} out of {this.props.quiz.NumberOfQuestions} </h2>
 
-                    {this.props.quiz.Questions[this.props.quiz_position-1].IsAnswered  && this.props.quiz.Questions[this.props.quiz_position-1].IsInReviewMode?
+                    {this.props.quiz.Questions[this.props.quiz_position-1].IsAnswered  && this.props.quiz.IsInReviewMode?
                         <h2>This question/response is : {this.getResult()}
                         </h2>
         
