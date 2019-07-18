@@ -7,13 +7,24 @@ class QuizStart extends Component{
         super(props)
 
         this.state = {
-            quizQuestionLength: 65
+            quizQuestionLength: 65,
+            testingType: 'Test'
         }
+        this.handleTestTypeChange = this.handleTestTypeChange.bind(this);
+
+
+    }
+
+    handleTestTypeChange(event) {
+        this.setState({testingType: event.target.value});
     }
 
 
+    
+
+
     handleTestStartClick(){
-        this.props.startClickHandler()
+        this.props.startClickHandler(this.state.testingType, this.state.quizQuestionLength)
     }
 
     handleTestResetClick(){
@@ -26,9 +37,7 @@ class QuizStart extends Component{
         this.props.numberOfQuestionsChangedHandler(event.target.value)
     }
 
-    handleQuizFormSubmit(event){
-        
-    }
+ 
 
     render(){
         return(
@@ -36,15 +45,31 @@ class QuizStart extends Component{
                 <h1>Quiz Maker - Start</h1>
                 
                 
-                <div>Number of Questions: <input type="text" name="numberOfQuestions" 
+                <form onSubmit={this.handleSubmit}>
+                    <h3>
+                    Testing Mode:
+                    <select value={this.state.testingType} onChange={this.handleTestTypeChange}>
+                        <option value="Test">Test</option>
+                        <option value="Quiz">Quiz</option>
+                        <option value="StudyGuide">Study Guide</option>
+                    </select>
+                    </h3>
+
+                    <br/>
+                    <br/>
+
+                <h3>Number of Questions: <input type="text" name="numberOfQuestions" 
                                             value={this.state.quizQuestionLength}  
                                             onChange={this.handleNumberOfQuestionsChange.bind(this)}/>
-                </div>
-                <h3>Quiz Mode:   </h3>
+                </h3>
+
 
 
                 <QuizQuestionButton button_text="Start" clickHandler={this.handleTestStartClick.bind(this)} />
                 <QuizQuestionButton button_text="Reset Quiz Options" clickHandler={this.handleTestResetClick.bind(this)} />
+
+
+                </form>
 
 
             </div>
