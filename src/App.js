@@ -24,7 +24,7 @@ class App extends Component {
       TimeRemaining: null,
       IsStarted: false,
       IsCompleted: false,
-      IsInReviewMode: this.TestType === 'StudyGuide'? true : false,
+      IsInReviewMode: false,
       CurrentQuestionNumber: 0,
       Questions: quizData.quiz_questions,
       NumberOfQuestions: quizData.quiz_questions.length,
@@ -94,7 +94,8 @@ handleTestStartClick(testType, numberOfQuestions){
       IsStarted: true,
       TestType: testType,
       NumberOfQuestions: numberOfQuestions,
-      Questions: fullArr
+      Questions: fullArr,
+      IsInReviewMode: testType === 'StudyGuide'? true : false,      
       })
       console.log(this.state.isStarted);
 
