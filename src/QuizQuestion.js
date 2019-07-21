@@ -71,6 +71,10 @@ render(){
 
     return(
         <main>
+            <div className='buttons'>
+            <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
+            <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />
+            </div>
             <section className='QuizQuestion'>
                 <p>{this.props.quiz_question.question_text}  {isQuiz ?
                 this.props.quiz_question.correct_options.length > 1? " Select the "+ this.props.quiz_question.correct_options.length + " correct options.":"  Select the correct option."
@@ -91,10 +95,6 @@ render(){
                    
                 </ul>
             </section>
-            <div className='buttons'>
-            <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
-            <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />
-            </div>
             <div className='buttons'>
             {isQuiz ? <QuizQuestionButton button_text="Show Answer" clickHandler={this.handleCheckAnswer.bind(this)} /> : null }
             </div>
