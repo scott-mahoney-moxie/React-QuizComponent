@@ -3,29 +3,38 @@ import React, {Component} from 'react'
 class QuizQuestionCheckBoxOption extends Component{
     constructor(props){
         super(props);
-        console.log('constructor')
+
+        console.log('QuizQuestionCheckBoxOption - constructor' + this.props.button_text)
+        console.log('checking for checked state is current buton in checked options? ' + this.props.quiz_question.chosen_options.indexOf(this.props.button_text) )
         this.state = { 
-            checked :  this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0,
+            checked :  false, //this.props.quiz_question.chosen_options.length > 0 && this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0,
             IsInReviewMode: this.props.quiz_question.IsInReviewMode   
         }
-        console.log('constructor state: ' + this.state.checked)
+        console.log(this.props.button_text + ' constructor state checked?: ' + this.state.checked)
     }
 
     
     toggleButton() {
         console.log('current state of button: ' + this.state.checked)
-        var checkedValue = this.state.checked;
-        var newCheckedValue = !checkedValue;
+        
+        console.log('this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 ' + this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 )
+        //var checkedValue = this.state.checked;
+        var newCheckedValue =!(this.props.quiz_question.chosen_options.indexOf(this.props.button_text) >=0 ); //!checkedValue;
         console.log('newCheckedValue: ' + newCheckedValue)
         this.setState({ checked: newCheckedValue }) ;
         //this.state.checked = newCheckedValue;
-        console.log('check option has changed to: ' + this.state.checked);
+
         console.log('now send to parent handler')
+
+        
+
+
         this.props.selectionChangedHander(this.props.button_text, newCheckedValue)
 }
 
     handleClick(){
-        this.props.clickHandler(this.props.button_text)
+      console.log('handleClicke: ' + this.state.checked)
+      this.props.clickHandler(this.props.button_text)
     }
 
 
@@ -70,7 +79,7 @@ class QuizQuestionCheckBoxOption extends Component{
     }
 
     render(){
-        console.log('render option')
+        console.log(this.props.button_text + ' - render option :  Current Checked state' + this.state.checked )
         return(
             <span   >
              <button className={this.getStyle()} 
