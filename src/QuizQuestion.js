@@ -72,7 +72,10 @@ render(){
     return(
         <main>
             <section className='QuizQuestion'>
-                <p>{this.props.quiz_question.question_text}</p>
+                <p>{this.props.quiz_question.question_text}  {isQuiz ?
+                this.props.quiz_question.correct_options.length > 1? " Select the "+ this.props.quiz_question.correct_options.length + " correct options.":"  Select the correct option."
+                :  "  Select the correct option(s)"
+                }</p>
             </section>
             <section>
                 <ul>
