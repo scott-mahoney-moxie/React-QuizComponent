@@ -13,7 +13,7 @@ class QuizFooter extends Component{
                 <div>
                  <div style={{fontWeight:'bold'}} >Question Source :</div>{this.props.quiz.Questions[this.props.quiz_position-1].question_source}</div>
                 {this.props.quiz.Questions[this.props.quiz_position-1].exam_topics.length !== 0 ?
-                <div><div style={{fontWeight:'bold'}} >Exam Category :</div><div>{this.props.quiz.Questions[this.props.quiz_position-1].exam_topics}</div></div>
+                <div style={{paddingTop: 10}}><div style={{fontWeight:'bold' }} >Exam Category :</div><div style={{paddingBottom:20}}>{this.props.quiz.Questions[this.props.quiz_position-1].exam_topics}</div></div>
                 : null}
                         
             </div>

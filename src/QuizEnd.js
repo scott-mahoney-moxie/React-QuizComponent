@@ -49,6 +49,28 @@ class QuizEnd extends Component{
         this.props.reviewClickHandler()
     }
 
+    filterExamTopic(targetValue, arrItem){
+        console.log('arrItem.exam_topics')
+        return (arrItem.exam_topics !== null && arrItem.exam_topics.length>0 && arrItem.exam_topics[0] === targetValue);
+      }
+
+      filterCorrectAnswer(arrItem){
+        console.log('arrItem.exam_topics')
+        return ( arrItem.IsCorrect );
+    }
+
+
+    getNumberOfTopicQuestions(topic){
+        var topicArr = this.props.quiz.Questions.filter(this.filterExamTopic.bind(this,  topic));
+        return topicArr.length;
+    }
+    getNumberOfTopicQuestionsCorrect(topic){
+        var topicArr = this.props.quiz.Questions.filter(this.filterExamTopic.bind(this,  topic));
+        var correctArr = topicArr.filter(this.filterCorrectAnswer.bind(this));
+        return correctArr.length;
+    }
+
+
 
 
     render(){
@@ -59,13 +81,18 @@ class QuizEnd extends Component{
                 <h2>Your score :{this.CalcPercentageCorrect()} %</h2>
                 <h2>You {this.CalcPercentageCorrect() > this.props.quiz.PercentageCorrectForPassingScore ? 'Passed!': 'Failed' } </h2>
 
-                <h3>Number of Questions: {this.props.quiz.NumberOfQuestions}</h3>
-                <h3>Number of Correct Answers:  {this.CalculateCorrect()} </h3>
-
-                { this.props.quiz.TestType != 'Test' ?
-                    <div><h4>Number of Questions Answered : {this.CalculateNumberOfQuestionsAnswered()}</h4>
-                    <h4>Percentage correct :{this.CalcPercentageCorrectOnlyForQuestionsAnswered()} % </h4> (based on Questions Answered )</div>
-                   
+                <h2>{this.CalculateCorrect()} correct out of Questions: {this.props.quiz.NumberOfQuestions}</h2>
+                <br/>
+                <h2>Exam Category Breakdown</h2>
+                { this.props.quiz.TestType != 'StudyGuide' ?
+                    <div>
+                        <div>
+                        {this.props.quiz.Topics.map((topic, index) =>{
+                            return <div><h3>{topic.key}</h3> - {this.getNumberOfTopicQuestionsCorrect(topic.key)} out of : {this.getNumberOfTopicQuestions(topic.key)} Correct </div>
+                            })
+                        }
+                        </div>
+                    </div>
                 : null }
 
 
