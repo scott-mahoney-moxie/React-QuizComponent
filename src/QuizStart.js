@@ -46,6 +46,17 @@ class QuizStart extends Component{
                 
                 
                 <form onSubmit={this.handleSubmit}>
+                    <div>
+                        <h4>Testing Modes:</h4>
+                        <b>Study Guide</b> - Will show correct answers highlighted for each question.<br/>
+                        <b>Quiz</b> - For each question, 
+                            <ul>
+                                <li style={{marginLeft:40}}>Will show you Select correct X # of options as hint.</li>
+                                <li style={{marginLeft:40}}>Will have a "Show Answer" button at the bottom to reveal correct answer</li>
+                            </ul>
+                        <b>Test</b> - For each question, will show you "Select correct option(s)" - will not reveal # of options you must select.
+                    </div>
+                    <br/>
                     <h3>
                     Testing Mode:
                     <select value={this.state.testingType} onChange={this.handleTestTypeChange}>
@@ -53,11 +64,9 @@ class QuizStart extends Component{
                         <option value="Quiz">Quiz</option>
                         <option value="StudyGuide">Study Guide</option>
                     </select>
-                    </h3>
+                    </h3>                    <br/>
 
-                    <br/>
-                    <br/>
-
+                <div>Select from 1 - {this.props.quiz.Questions.length}</div>
                 <h3>Number of Questions: <input type="text" name="numberOfQuestions" 
                                             value={this.state.quizQuestionLength}  
                                             onChange={this.handleNumberOfQuestionsChange.bind(this)}/>

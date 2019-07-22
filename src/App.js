@@ -63,7 +63,7 @@ generateQuestionsBasedOnTopics(numberOfQuestions){
     console.log('TOPIC: ' + topic.key + ' % ' + topic.percent);
     var numTopicQuestions;
     numTopicQuestions = (parseInt(numberOfQuestions) * (topic.percent/100)).toFixed(0);
-    var topicArr = this.state.Questions.filter(this.matchExamTopic.bind(this,  topic.key)).shuffle().slice(0, numTopicQuestions);
+    var topicArr = quizData.quiz_questions.filter(this.matchExamTopic.bind(this,  topic.key)).shuffle().slice(0, numTopicQuestions);
 
     fullArr = fullArr.concat(topicArr);
 
@@ -102,8 +102,16 @@ handleTestStartClick(testType, numberOfQuestions){
   };
  
   handleTestResetClick(){
+    var fullArr = this.generateQuestionsBasedOnTopics(this.state.NumberOfQuestions);
     this.setState({
-      IsStarted: false
+      IsStarted: false,
+      IsCompleted: false,
+      IsInReviewMode: false,
+      CurrentQuestionNumber: 0,
+      NumberOfQuestions:fullArr.length,
+      NumberOfQuestionsAnswered: 0,
+      NumberOfQuesionsCorrect:  0,
+      Questions: fullArr,
     })
   }
 
@@ -112,7 +120,7 @@ handleTestStartClick(testType, numberOfQuestions){
     return (
 
         this.state.IsStarted ? 
-          <Quiz quiz={this.state} /> :          
+          <Quiz quiz={this.state} resetClickHandler={this.handleTestResetClick.bind(this)} /> :          
           <QuizStart quiz={this.state} 
             numberOfQuestionsChangedHandler={this.handleNumberOfQuestionsChanged.bind(this)}
             startClickHandler={this.handleTestStartClick.bind(this)}  

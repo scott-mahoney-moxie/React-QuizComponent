@@ -43,6 +43,9 @@ class QuizEnd extends Component{
         this.props.resetClickHandler()
     }
 
+    handleSetupClick(){
+        this.props.setupClickHandler()
+    }
 
     handleTestReviewClick(){
         this.props.quiz.IsInReviewMode= true;
@@ -76,16 +79,17 @@ class QuizEnd extends Component{
     render(){
         return(
             <div style={{marginLeft:10}}>
-                <h1>{this.props.quiz.TestType} Results:</h1>
-                
-                <h2>Your score :{this.CalcPercentageCorrect()} %</h2>
-                <h2>You {this.CalcPercentageCorrect() > this.props.quiz.PercentageCorrectForPassingScore ? 'Passed!': 'Failed' } </h2>
 
-                <h2>{this.CalculateCorrect()} correct out of Questions: {this.props.quiz.NumberOfQuestions}</h2>
-                <br/>
-                <h2>Exam Category Breakdown</h2>
                 { this.props.quiz.TestType != 'StudyGuide' ?
-                    <div>
+                <div>
+                    <h1>{this.props.quiz.TestType} Results:</h1>
+                    
+                    <h2>Your score :{this.CalcPercentageCorrect()} %</h2>
+                    <h2>You {this.CalcPercentageCorrect() > this.props.quiz.PercentageCorrectForPassingScore ? 'Passed!': 'Failed' } </h2>
+
+                    <h2>{this.CalculateCorrect()} correct out of Questions: {this.props.quiz.NumberOfQuestions}</h2>
+                    <br/>                    
+                    <h2>Exam Category Breakdown</h2>
                         <div>
                         {this.props.quiz.Topics.map((topic, index) =>{
                             return <div><h3>{topic.key}</h3> - {this.getNumberOfTopicQuestionsCorrect(topic.key)} out of : {this.getNumberOfTopicQuestions(topic.key)} Correct </div>
@@ -97,7 +101,8 @@ class QuizEnd extends Component{
 
 
                 <QuizQuestionButton button_text="Review Results" clickHandler={this.handleTestReviewClick.bind(this)} />
-                <QuizQuestionButton button_text="Reset Quiz" clickHandler={this.handleResetClick.bind(this)}/>
+                <QuizQuestionButton button_text="Retake Quiz" clickHandler={this.handleResetClick.bind(this)}/>
+                <QuizQuestionButton button_text="Setup a new Quiz/Test" clickHandler={this.handleSetupClick.bind(this)}/>
 
 
             </div>
