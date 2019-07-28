@@ -1,11 +1,12 @@
 {
   "quiz_name": "Adobe Target Business Practitioner",
-  "tpics" :[
+  "topics" :[
     {"key": "Planning and Configuring", "percent":  29},
     {"key": "Executing and Managing", "percent": 34}, 
     {"key": "Analyzing and Reporting", "percent":  28}, 
     {"key": "Troubleshooting", "percent": 9} 
   ],
+  "percentageCorrectForPassingScore": 68, 
   "quiz_questions": [
     {
       "question_type":"True-False","question_text":"Adobe Target is a solution for optimizing personalization strategies across all digital channels; however, it currently doesn't support personalization efforts on mobile channels - True or False?","presented_options":["True","False"],"correct_options":["False"],"exam_topics":["Planning and Configuring"],"question_source":"What is Adobe Target - test out","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false

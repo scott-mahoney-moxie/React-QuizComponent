@@ -17,7 +17,7 @@ class App extends Component {
  
       TestType : 'StudyGuide', // 'Quiz',  'Test','StudyGuide'
       quiz_name: quizData.quiz_name,
-      PercentageCorrectForPassingScore: 68, // Passing score:(550) All Adobe exams are reported on a scale of 300 to 700. The passing score for each exam is 550
+      PercentageCorrectForPassingScore: quizData.percentageCorrectForPassingScore, // Passing score:(550) All Adobe exams are reported on a scale of 300 to 700. The passing score for each exam is 550
       IsTimedTest: false,
       SecondsAllotedPerQuestion: 75, // 80 minutes total
       TimeStarted: null,
@@ -31,12 +31,7 @@ class App extends Component {
       NumberOfQuestionsAnswered: 0,
       NumberOfQuesionsCorrect:  0,
       PercentageOfCorrectAnswers: this.NumberOfQuestions === 0? 0 : (this.NumberOfQuesionsCorrect / this.NumberOfQuestions) * 100,
-      Topics :[
-        {key: 'Planning and Configuring', percent:  29}, //29
-        {key: 'Executing and Managing', percent: 34}, //34
-        {key: 'Analyzing and Reporting', percent:  28}, //28
-        {key: 'Troubleshooting', percent: 9} //9
-      ]
+      Topics :  quizData.topics
     };
 
     this.state.IsInReviewMode = this.state.TestType === 'StudyGuide';

@@ -8,15 +8,15 @@ class QuizHeader extends Component{
             (this.props.quiz_position <= this.props.quiz.NumberOfQuestions) ? 
 
             this.props.quiz.Questions[this.props.quiz_position-1].IsCorrect ?
-            <span style={{color:'green'}}>Correct</span>
-            :<span style={{color:'red'}}>Incorrect</span>
+            <span className="CorrectText">Correct</span>
+            :<span className="InCorrectText">Incorrect</span>
             : null
         )
     }
 
     render(){
         return(
-            <div style={{marginLeft:10, marginRight:30}}>
+            <div className="QuizHeader" >
                 <h1>{this.props.quiz.quiz_name} - {this.props.quiz.TestType}</h1>
                 {this.props.quiz_position <= this.props.quiz.NumberOfQuestions ?
                     <div>

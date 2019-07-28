@@ -42,7 +42,7 @@ class QuizQuestionCheckBoxOption extends Component{
 
     checkmark() {
         const element = (
-          <span style={{fontSize:22}}>
+          <span className="checkmarkText">
             &#10004;
           </span>
         );
@@ -51,7 +51,7 @@ class QuizQuestionCheckBoxOption extends Component{
 
       emptyMark() {
         const element = (
-          <span style={{fontSize:22}}>
+          <span className="checkmarkText">
             &nbsp;
           </span>
         );

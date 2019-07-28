@@ -22,6 +22,35 @@
   display: block;
   padding-top: 20px;
 }
+
+.QuizHeader {
+  margin-left:10px;
+  margin-right:30px;
+}
+
+.QuizFooter{
+  margin-left:10px;
+  margin-right:30px;
+  font-style:italic;
+  font-size: 1em;
+}
+
+.QuizFooterQuestionSourceHeader {
+  font-weight: bold
+}
+.QuizFooterExamCategorySpacer {
+  padding-top: 20px
+}
+
+.QuizFooterExamCategoryHeader{
+  font-weight: bold
+}
+
+.QuizFooterPageBottomPad {
+  padding-bottom:20px
+}
+
+
 ul {
   padding: 0;
   margin: 0;
@@ -46,6 +75,14 @@ button {
   color: red;
 }
 
+.CorrectText{
+  color:green
+}
+
+.InCorrectText{
+  color:red
+}
+
 .SelectedCorrectAnswer {
   border: 3px solid green;
   outline-style: solid;
@@ -64,3 +101,21 @@ button {
   outline-color: red;
 }
 
+.checkmarkText  {
+  font-size:22px
+}
+
+
+.instructionText {
+  margin-left:70px
+}
+
+.StartPage {
+  margin-left:30px
+}
+
+
+.instructionalCopy {
+  font-style: italic;
+  font-weight: normal
+}
