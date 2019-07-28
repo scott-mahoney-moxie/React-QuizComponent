@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && clientlib --verbose",
     "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
     "eject": "react-scripts eject"
   },
@@ -32,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "aem-clientlib-generator": "^1.4.3",
     "babylon": "6.18.0",
     "chai": "4.1.2",
     "chai-enzyme": "0.8.0",
@@ -42,4 +43,5 @@
     "react-test-renderer": "16.3.1",
     "sinon": "5.0.1"
   }
+  
 }
