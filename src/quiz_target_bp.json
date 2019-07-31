@@ -372,7 +372,7 @@
       "question_type":"True-False","question_text":"Using the OOB integration provided for Adobe Target and AEM, users have full access to utilize all the Testing Activity Types from Target.  True of False?","presented_options":["True","False"],"correct_options":["False"],"exam_topics":["Analyzing and Reporting"],"question_source":"Target Technical foundations (OD) Tenchnical Architecture: CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
       }, 
       {
-      "question_type":"Single Answer","question_text":"You should be able to target offers & experiences using Adobe Audience Manager  Segment data, when you choose to integrate?","presented_options":["Adobe Target with the Marketing Cloud","Adobe Target with Adobe.io","Adobe Audience Manager within A4T"],"correct_options":["Adobe Audience Manager with Adobe Target"],"exam_topics":["Analyzing and Reporting"],"question_source":"Target Technical foundations (OD) Tenchnical Architecture: CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      "question_type":"Single Answer","question_text":"You should be able to target offers & experiences using Adobe Audience Manager  Segment data, when you choose to integrate?","presented_options":["Adobe Target with the Marketing Cloud","Adobe Target with Adobe.io","Adobe Audience Manager within A4T","Adobe Audience Manager with Adobe Target"],"correct_options":["Adobe Audience Manager with Adobe Target"],"exam_topics":["Analyzing and Reporting"],"question_source":"Target Technical foundations (OD) Tenchnical Architecture: CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
       }, 
       {
       "question_type":"Single Answer","question_text":"When does Experience Targeting evaluate visitors?  ","presented_options":["Each conversion","Browser specification","Device Type","Each Page Load"],"correct_options":["Each Page Load"],"exam_topics":["Analyzing and Reporting"],"question_source":"Target Technical foundations (OD) Create an Activity: Test Out","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
@@ -717,7 +717,7 @@
       "question_type":"Multi-Answer","question_text":"When executing an MVT Test, test duration will be impacted by: ","presented_options":["Number of elements","Number of locations","Number of experiences","Number of conversions","Number of other activities running","Number of collisions"],"correct_options":["Number of elements","Number of locations"],"exam_topics":["Planning and Configuring"],"question_source":"Creating a multivariate test - CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
       }, 
       {
-      "question_type":"Multi-Answer","question_text":"What two reports are available when you analyze the results of you multivariate Test?","presented_options":["Experience Peformance Report","Location Contribution Report","Offer Contribution Report","Converion Report","Location-Offer Report"],"correct_options":["Experience Peformance Report","Location Contribution Report"],"exam_topics":["Analyzing and Reporting"],"question_source":"Creating a multivariate test - CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      "question_type":"Multi-Answer","question_text":"What two reports are available when you analyze the results of you multivariate Test?","presented_options":["Experience Performance Report","Location Contribution Report","Offer Contribution Report","Conversion Report","Location-Offer Report"],"correct_options":["Experience Performance Report","Location Contribution Report"],"exam_topics":["Analyzing and Reporting"],"question_source":"Creating a multivariate test - CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
       }, 
       {
       "question_type":"Single Answer","question_text":"Where  in Adobe Target can you see the Collision Report?","presented_options":["Within each activity on Collision Tab","Within each activity on the Reporting tab","Under Settings - Collision Reporting","Only present within MVT Activities"],"correct_options":["Within each activity on Collision Tab"],"exam_topics":["Executing and Managing"],"question_source":"Target Technical Foundations OD) Collision Detection:CUSTOM","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
@@ -830,6 +830,6 @@
       {
       "question_type":"Single Answer","question_text":"When viewing the Location Contribution Report, which table shows conversion rate, lift and confidence for each offer?  ","presented_options":["Offer-Level","Influence","Summary","Primary"],"correct_options":["Offer-Level"],"exam_topics":["Analyzing and Reporting"],"question_source":"Target Activity : test OUT","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
       } 
-      
+           
   ]
 }

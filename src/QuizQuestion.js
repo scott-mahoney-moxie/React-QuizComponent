@@ -73,6 +73,7 @@ render(){
         <main>
             <div className='buttons'>
             <QuizQuestionButton button_text="Prev" clickHandler={this.handleClick.bind(this)} />
+            <div className='questionPosition'>Question # {this.props.quiz_position} of {this.props.quiz.NumberOfQuestions}</div>
             <QuizQuestionButton button_text="Next" clickHandler={this.handleClick.bind(this)} />
             </div>
             <section className='QuizQuestion'>
