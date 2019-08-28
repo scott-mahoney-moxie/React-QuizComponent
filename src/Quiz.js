@@ -26,7 +26,7 @@ class Quiz extends Component {
           })
         
         this.props.quiz.Questions = this.props.quiz.Questions.shuffle();
-        this.props.quiz.Questions.map( (arr) => {arr.presented_options =  arr.presented_options.shuffle()});
+        this.props.quiz.Questions.map( (arr) => {return arr.presented_options =  arr.presented_options.shuffle()});
 
 
         this.props.quiz.IsInReviewMode = false;

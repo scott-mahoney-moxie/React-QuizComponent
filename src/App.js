@@ -3,9 +3,8 @@ import Quiz from './Quiz.js'
 import QuizStart from './QuizStart.js'
 import './App.css'
 import './Quiz-Utils.js'
-import { exec } from 'child_process';
 
-let quizData = require('./quiz_target_bp.json')
+let quizData = require('./quiz_aem_bp.json')
 
 class App extends Component {
 
@@ -37,7 +36,7 @@ class App extends Component {
     this.state.IsInReviewMode = this.state.TestType === 'StudyGuide';
     this.state.Questions = this.state.Questions.shuffle();
     
-    this.state.Questions.map( (arr) => {arr.presented_options =  arr.presented_options.shuffle()});
+    this.state.Questions.map( (arr) =>  { return arr.presented_options =  arr.presented_options.shuffle()});
     
 } ;
 
@@ -57,10 +56,10 @@ generateQuestionsBasedOnTopics(numberOfQuestions){
   this.state.Topics.forEach(topic =>{
     console.log('TOPIC: ' + topic.key + ' % ' + topic.percent);
     var numTopicQuestions;
-    numTopicQuestions = (parseInt(numberOfQuestions) * (topic.percent/100)).toFixed(0);
+    numTopicQuestions = (parseInt(numberOfQuestions, 10) * (topic.percent/100)).toFixed(0);
     var topicArr = quizData.quiz_questions.filter(this.matchExamTopic.bind(this,  topic.key)).shuffle().slice(0, numTopicQuestions);
 
-    fullArr = fullArr.concat(topicArr);
+    fullArr = fullArr.concat(topicArr).shuffle();
 
   })
 

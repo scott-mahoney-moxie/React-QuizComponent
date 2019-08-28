@@ -35,7 +35,7 @@ class QuizEnd extends Component{
 
     CalcPercentageCorrectOnlyForQuestionsAnswered(){
 
-        return  this.CalculateNumberOfQuestionsAnswered() ==0? null : ((this.CalculateCorrect() / this.CalculateNumberOfQuestionsAnswered()) * 100).toFixed(0)
+        return  this.CalculateNumberOfQuestionsAnswered() === 0 ? null : ((this.CalculateCorrect() / this.CalculateNumberOfQuestionsAnswered()) * 100).toFixed(0)
     }
 
 
@@ -80,7 +80,7 @@ class QuizEnd extends Component{
         return(
             <div style={{marginLeft:10}}>
 
-                { this.props.quiz.TestType != 'StudyGuide' ?
+                { this.props.quiz.TestType !== 'StudyGuide' ?
                 <div>
                     <h1>{this.props.quiz.TestType} Results:</h1>
                     
