@@ -1,1 +1,1 @@
-# Reatc Quiz Component with React
+# Adobe Certification Quiz Component built with React
