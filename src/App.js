@@ -4,7 +4,7 @@ import QuizStart from './QuizStart.js'
 import './App.css'
 import './Quiz-Utils.js'
 
-let quizData = require('./quiz_aem_bp.json')
+let quizData = require('./quiz_analytics_bp.json')
 
 class App extends Component {
 

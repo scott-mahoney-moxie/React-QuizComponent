@@ -1,0 +1,94 @@
+{
+  "quiz_name": "Adobe Campaign Business Practitioner",
+  "topics" :[
+    {"key": "Campaign Design and Management", "percent":  15},
+    {"key": "Delivery Management", "percent":  31}, 
+    {"key": "Workflow Management", "percent": 25}, 
+    {"key": "Administration", "percent":  12}, 
+    {"key": "Using Email Designer", "percent":  7}, 
+    {"key": "Using Reports", "percent": 10} 
+
+  ],
+  "percentageCorrectForPassingScore": 68, 
+  "quiz_questions": [
+    {
+      "question_type":"Multi Answer","question_text":"Which three aspects of an A/B test should a Practitioner use Adobe Campaign to configure? ","presented_options":["indicators","sample size","confidence level","response delay"],"correct_options":["indicators","sample size","response delay"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"The number of records out of union is less than intended. Which conclusion should be made? ","presented_options":["The target is dropping exclusions.","The target populations are NOT mutually exclusive.","The target is dropping inactive records.","The target schemas are NOT the same."],"correct_options":["The target populations are NOT mutually exclusive."],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"What is the advantage of using a string delimiter in the extraction file format? ","presented_options":["results in a smaller file","allows the use of Unicode values","allows the use of the column separator in string values","speeds up the generation of the file"],"correct_options":["allows the use of the column separator in string values"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"How would you send a proof to the 'Holiday Marketing Team' list for approvals? ","presented_options":["Select the list from the send a Proof menu","You cannot send the proof to the lists","Enter the email addressed into the \"To:\" line","Select the email addresses from the recipient table"],"correct_options":["Select the email addresses from the recipient table"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Why might a Practitioner change the filtering dimension in a query? ","presented_options":["to make the query more efficient","to return records other than Recipients","to execute a left outer join","to specify filtering conditions"],"correct_options":["to specify filtering conditions"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Which workflow activity should be used to export data? ","presented_options":["Data extraction","List update","Update data","Data download"],"correct_options":["Data extraction"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"A Practitioner's team learns that Gmail has modified its spam filtering criteriaHow should the Practitioner use the client console to obtain the percentage of users that have been affected by this change?.","presented_options":["use \"Counters\" within \"Platform\" selection in the Navigation hierarchy","use \"Aggregates\" functionality within Production - Objects created automatically","filter the Recipient dataset based on emails that contain the string \"gmail\" and divide by total number of Recipients","export the list of the recipients to Excel and create a formula to calculate the required percentage"],"correct_options":["filter the Recipient dataset based on emails that contain the string \"gmail\" and divide by total number of Recipients"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"What happens when an email delivery is sent without a subject line?","presented_options":["The Delivery Label is used as the subject line","The delivery fails to save","The delivery preparation fails","The campaign creator receives a delivery notification"],"correct_options":["The delivery preperation fails"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Following Campaign Standard default control rules, what should always be included in the body copy of an email delivery?","presented_options":["Preheader","Unsubscribe Link","Subject Line","Personalizaed greetings"],"correct_options":["Unsubscribe Link"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Which field is used to determine the profile's variant in a multilingual delivery in an out-of-the-box configuration?","presented_options":["Preferred Language","Country","Geography","Location"],"correct_options":["Preffered Language"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"How can you verify that the email content is displayed correctly across different email clients?","presented_options":["Include a trap test profile","Use the Preview feature","Send an Email rendering test email","Send a Proof test email"],"correct_options":["Send an Email rendering test email"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Some emails addresses are shared by multiple profiles. During a delivery, the business team requires to only send one message per email address regardless of the number of profiles sharing the email address. Where is the best location for suuch a business requirement to exist?","presented_options":["In the marketing workflow using an Exclusion activity","As a typology rule during message preparation","Through the data loading process","In the marketing workflow using a Query activity"],"correct_options":["As a typology rule during message preparation"],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"What is the cause of this email delivery failure error message, 'The recipient no longer wants to be contacted'?","presented_options":["The address is not specified.","The address is expired.","The address is blacklisted.","The address is not defined."],"correct_options":["The address is blacklisted."],"exam_topics":["Business practitioner"],"question_source":"ACS Practice Exam","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"If you need to upload a file that contains data exported from a CRM system, which of the following workflow activities would you use to upload the file into Campaign? Select the correct answer.","presented_options":["Update data","Transfer file","Reconciliation","Load file"],"correct_options":["Transfer file"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Which of the following options is the more common and recommended approach for exporting data in Adobe Campaign Standard?","presented_options":["Generic Export Job","List views","Export Template","Workflows"],"correct_options":["Workflows"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"True-False","question_text":"The import template method is recommended when the marketer plans to regularly import profile data and the import job requirements are varied. True or False?","presented_options":["True","False"],"correct_options":["False"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Which of the following data management activities would you use to match source data, data that has been imported into Campaign, with existing records in Campaign? Select the correct answer.","presented_options":["Transfer file","Extract file","Load file","Reconciliation"],"correct_options":["Reconciliation"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"To perform a mass update of data in the Adobe Campaign database, a user would select which of the following data management workflow activities? Select the correct answer.","presented_options":["Extract file","Reconciliation","Load file","Update data"],"correct_options":["Update data"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"The Load file activity allows you to complete which of the following use case? Select the correct answer.","presented_options":["Identify links to the source data, based on attributes","Export data from a file to use in the workflow","Extract data into the format of a file","Import data from a file to use in the workflow"],"correct_options":["Import data from a file to use in the workflow"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"True-False","question_text":"In Campaign, you can import data using a workflow, or using an import template. A workflow offers a mechanism to import transactions, households, or profiles by using the data management activities. True or False?","presented_options":["True","False"],"correct_options":["True"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Multi Answer","question_text":"In a workflow, there are six Data Management activities that are available to configure the importing and expoting of data; identify the activities. Select the three correct answers.","presented_options":["Update data and subscription","Save audience and deduplication","Transfer file and Extract file","Reconciliation and Load file"],"correct_options":["Update data and subscription services","Transfer file and Extract file","Reconciliation and Load file"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Multi Answer","question_text":"Which of the following are options to export data in Adobe Campaign Standard? Select the two correct answers. ","presented_options":["Generic Export Job","List views","Workflows","Export Template"],"correct_options":["List view","Workflows"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Multi Answer","question_text":"Why is it important that the importing data workflow be configured and executed by an advanced user who knows how to properly configure Campaign's data structure? Select the two correct answers.","presented_options":["To avoid potential corruption of the data model","To avoid potential corruption of data","To avoid deleting existing data","To avoid unauthorized modifications to the data model"],"correct_options":["To avoid potential corruption of data","To avoid deleting existing data"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Single Answer","question_text":"Which of the following options offers a quick method for exporting a file to the local system? Select the correct answer.","presented_options":["Export Template","Workflows","List views","Generic Export Job"],"correct_options":["List views"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"Multi Answer","question_text":"Which of the following are benefits of the import template? Select the two correct answers.","presented_options":["A simplified interface for importing profile data","A pre-configured workflow for importing transaction data","A simplified interface for importing transaction data","A pre-configured workflow for importing profile data"],"correct_options":["A simplified interface for importing profile data","A pre-configured workflow for importing profile data"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }, 
+      {
+      "question_type":"True-False","question_text":"The Subscription Services activity allows you to subscribe or unsubscribe a mass list of profiles to a Campaign service. True or False?","presented_options":["True","False"],"correct_options":["True"],"exam_topics":["ACS: Importing and Exporting Data"],"question_source":"ACS: Technical Foundations for BP (OD)","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+      }
+                                
+  ]
+}
