@@ -1,10 +1,14 @@
 {
   "quiz_name": "Adobe Target Business Practitioner",
   "topics" :[
-    {"key": "Planning and Strategy", "percent":  22},
-    {"key": "Configuring, Executing and Managing", "percent": 48}, 
-    {"key": "Analyzing and Reporting", "percent":  18}, 
-    {"key": "Troubleshooting", "percent": 12} 
+    {"key": "Adobe Target Fundamentals", "percent":  12},
+    {"key": "Integrating with Adobe Target", "percent": 16}, 
+    {"key": "Adobe Target Administration and Governance", "percent":  12}, 
+    {"key": "Adobe Target and Supported Touch Points", "percent":  14},
+    {"key": "Leverage Adobe Target Recommendations", "percent": 8}, 
+    {"key": "Architect, Design and Implement Adobe Target", "percent":  20}, 
+    {"key": "Troubleshooting", "percent": 18} 
+	
   ],
   "percentageCorrectForPassingScore": 70, 
   "quiz_questions": [
@@ -769,6 +773,5 @@
 }, 
 {
 "question_type":"Multi-Answer","question_text":"You want to implement without a TMS;  with the end result being an auto-created global mBox.  Which conditions do you need to take into account? ","presented_options":["Load the library fle asynchronously","Load the library file synchronously","Place library file in <head>","Place the library file in <body>"],"correct_options":["Load the library file synchronously","Place library file in <head>"],"exam_topics":["Planning and Strategy"],"question_source":"Target Technical foundations (OD) Implementation Models and Platforms Overview","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
-}
-  ]
+}  ]
 }

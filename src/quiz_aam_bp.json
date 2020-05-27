@@ -1,0 +1,259 @@
+{
+  "quiz_name": "Adobe Audience Manager Business Practitioner",
+  "topics" :[
+    {"key": "Activation", "percent":  32},
+    {"key": "Analysis", "percent":  32}, 
+    {"key": "Platform Configuration", "percent": 16}, 
+    {"key": "Data Flow Quality Assurance", "percent":  20 }
+  ],
+  "percentageCorrectForPassingScore": 68, 
+  "quiz_questions": [
+{
+"question_text":"What can brands offer their customers with the help of a DMP?","presented_options":["Consistent, personalized experiences","Password management services","Email, direct mail, and in-app offers","In-store and online purchasing capability"],"correct_options":["Consistent, personalized experiences"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What Audience Manager feature helps brands augment audiences for improved personalization?","presented_options":["Audience Lab","Audience Marketplace","Algorithmic Modeling","Visitor Profile Viewer"],"correct_options":["Audience Marketplace"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What data management challenge can prevent digital marketers from achieving their goals?","presented_options":["Customers making purchases in-store rather than online","Users accessing the website from a single, owned device","Marketers having more data than they can realistically use","Departments controlling isolated data repositories"],"correct_options":["Departments controlling isolated data repositories"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What are some data governance features of AAM? Select 2 correct answers.","presented_options":["Identity management","Second-party data sharing","IP address blocking","Data Export Controls","Role-based access control"],"correct_options":["Data Export Controls","Role-based access control"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What objective might lead a digital marketer to use Algorithmic Modeling in AAM?","presented_options":["Improve personalization","Extend reach","Manage cost","Optimize audience allocation"],"correct_options":["Extend reach"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"DMPs collect data (data in), build audiences, and push data to marketing platforms (data out). Audience Manager has data out integrations with which of the following vendor types?","presented_options":["Identity resolution services","Offline data on-boarders","DSPs","Device graphs"],"correct_options":["DSPs"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which Adobe Solution provides web content management?","presented_options":["Target","Campaign","Audience Manager","Experience Manager"],"correct_options":["Experience Manager"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Complete the sentence by filling in the blank. 'Brands go beyond breaking down data silos within their organization, using Audience Manager identity management features to deliver an improved customer experience when consumers _______ .'","presented_options":["shop multiple brands","change their passwords","own multiple devices","activate ad blockers"],"correct_options":["own multiple devices"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Complete the sentence by filling in the blank. 'The key functions of a DMP are to collect data, build audiences, push data to marketing platforms, and _______ .'","presented_options":["cleanse data","manage user logins","unify profiles","target audiences"],"correct_options":["unify profiles"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What can a DMP like AAM be used for?","presented_options":["Reporting on website and mobile app performance","Buying and selling advertising using real-time bidding","Storing sensitive or directly identifiable personal data","Activating sergments to destinations for targeting"],"correct_options":["Activating sergments to destinations for targeting"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What is one technical challenge that companies can address by implementing a digital foundation with the Adobe Experience Cloud?","presented_options":["Stitching together different digital marketing tools","Integrating Adobe and non-Adobe solutions","Meeting all current and future digital marketing needs","Securing marketing technologies within the company firewall"],"correct_options":["Stitching together different digital marketing tools"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Introduction","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What is the definition of a data source?","presented_options":["A container to hold traits","A trigger function the begins an onboarding process","A location where data gets sent"],"correct_options":["A container to hold traits"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Data Sources","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What kinds of traits are typically associated with a cookie-type data source?","presented_options":["User-activated traits","Onboarded traits","Rule-based traits","Independent traits"],"correct_options":["Rule-based traits"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Data Sources","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Why should you select Cross Device ID type when creating a new data source to onboard offline data traits?","presented_options":["It triggers additional security measures","It uses a customer ID to reconcile online and offline profiles","It allows your data source to recognize Android devices"],"correct_options":["It uses a customer ID to reconcile online and offline profiles"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Data Sources","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"If the ID type for the data source is 'Cross Device', what allows collected data to be associated with the user's profile?","presented_options":["Customer ID used to log into a website","Data from a CRM system","Whether the user is working on a desktop computer, tablet or phone","Identifiers stored in the user's browser"],"correct_options":["Customer ID used to log into a website"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Data Sources","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"If the ID type for the data source is 'Cookie', what allows collected data to be associated with the user's profile?","presented_options":["Customer ID used to log into a website","Whether the user is working on a desktop computer, tablet or phone","Data from a CRM system","Identifiers stored in the user's browser"],"correct_options":["Identifiers stored in the user's browser"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Data Sources","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What are data export controls used for? Select the 2 correct answers.","presented_options":["Restricting mapping segments to destinations","Limiting data export volumes in keeping with license agreements","Ensuring that data use agreements are enforced","Restricting access to the export feature in the AAM UI"],"correct_options":["Restricting mapping segments to destinations","Ensuring that data use agreements are enforced"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Validate Data Flow","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How is onboarded data associated with a brand's data?","presented_options":["Through the marketing cloud sub-doman","Through the marketing cloud org ID","Through the FTP location","Through the Data Source ID"],"correct_options":["Through the Data Source ID"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Validate Data Flow","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"In the media tagging pixel key-value pairs, how are the keys prefixed?","presented_options":["h_","c_","d_","P_"],"correct_options":["d_"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Validate Data Flow","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"When is newly onboarded data ready for use in AAM?","presented_options":["1 week","49-72 hours","Within 2 hours","24-48 hours"],"correct_options":["24-48 hours"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Validate Data Flow","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"To collect data on an unknown visitor to a brand's web site, which ID type should be used?","presented_options":["Cross Device","Anonymous","Person","Cookie"],"correct_options":["Cookie"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Validate Data Flow","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which tye of trait uses data from offline sources such as CRM systems?","presented_options":["Algorithmic","Onboarded","Rule-based","Look-alike"],"correct_options":["Onboarded"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Prepare to build audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which of the following collects information about a user from the first-party, second-party or third-party data?","presented_options":["A segment","A trait","A signal","A data source"],"correct_options":["A signal"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Prepare to build audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which type of trait uses signals collected online in real time, such as when a user browses a website?","presented_options":["Onboarded","Algorithmic","Rule-based","Look-alike"],"correct_options":["Rule-based"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Prepare to build audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What is the BAAAM tool used for?","presented_options":["Sharing segments via the Audience Library core services","Creating Bulk folder, trait and segment creation","Creating Administering Audience Manager users","Sending segments to an ad server"],"correct_options":["Creating Bulk folder, trait and segment creation"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Prepare to build audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What is mandatory when you are defining traits and segments?","presented_options":["Integration code","Test URL","Recency","Frequency","Folder"],"correct_options":["Folder"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Prepare to build audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Data Explorer _____ is used to quickly view top available signals.","presented_options":["Signals dashboard","Custom dashboard","New dashboard","Traits dashboard"],"correct_options":["Signals dashboard"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Explore Signals in Data Explorer","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"_____ settings of Data Explorer allow a user to reuse it in everyday work life to save time and effort.","presented_options":["Site sections","Save search","Data signals"],"correct_options":["Save search"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Explore Signals in Data Explorer","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"To view top unused signals, a user must open _____ first, and select signals.","presented_options":["Tools","Analytics","Audience Data"],"correct_options":["Audience Data"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Explore Signals in Data Explorer","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"The rule-based trait is used to gather data from Adobe Analytics. To create this trait, you need to use _____ expression.","presented_options":["c_evar3","c_evar4","c_evar5"],"correct_options":["c_evar3"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Explore Signals in Data Explorer","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How can you reduce the number of users that qulify for a segment?","presented_options":["Add more traits to a segment without linking them","Link traits together with OR (for example \"sports enthusiast\" OR \"earns more than $100,000\")","Set recency and/or frequency on one or more traits","Remove all the traits from  a segment","Link traits together with AND or AND NOT (for example \"sports enthusiast\" AND \"earns more than $100,000\")"],"correct_options":["Set recency and/or frequency on one or more traits","Link traits together with AND or AND NOT (for example \"sports enthusiast\" AND \"earns more than $100,000\")"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Build Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which of the following can be defined as a piece of data collected about a user from first-party, second-party or third-party data?","presented_options":["Algorithmic","Signal","Trait","Segment"],"correct_options":["Signal"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Build Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What does the Visitor Profile Viewer display?","presented_options":["Web properties visited by a given device profile","Network traffic for data collection containing header information","First- and third- party cookies associated with a given user profile","Segments and traits for which a given UUID qualifies"],"correct_options":["Segments and traits for which a given UUID qualifies"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Build Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which information do you need in order to define traits in AAM? Select the 2 correct answers.","presented_options":["The data source to use","The type of server being used","The way to reference signals coming into AAM","The type of cookie being used"],"correct_options":["The data source to use","The way to reference signals coming into AAM"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Build Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How do you create a folder (to hold traits) on the Traits screen in AAM?","presented_options":["Select Add New > New folder","Double-click on the parent folder","Select Create Trait > New folder","Hover over a folder and click on the plus sign"],"correct_options":["Hover over a folder and click on the plus sign"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Build Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which of the following can you select from the Add New drop-down menu on the Traits page of Audience Manager?","presented_options":["Signal type","Trait type","Data source","Key pair value"],"correct_options":["Trait type"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Build Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What information must you include when adding a non-serialized URL Destination to a Segment? ","presented_options":["The base URL","The cookie name","The secure URL","The data source"],"correct_options":["The base URL","The secure URL"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Activate Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which delivery methods are best when it's important that segments are transferred immediately?","presented_options":["URL","Server-to-server","Impression pixel","Cookies"],"correct_options":["URL","Cookies"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Activate Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"To set up a URL Destination in AAM, you click on Manage Data and then on which menu item?","presented_options":["Tags","Destinations","Data Sources","Segments"],"correct_options":["Destinations"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Activate Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Where do you set up a new Cookie Destination in Audience Manager?","presented_options":["Manage Data > Destinations > Create New Destination","Manage Data >Traits > Destination Types","Manage Data > Data Sources > Destination Description","Manage Data > Segments > Cookies"],"correct_options":["Manage Data > Destinations > Create New Destination"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Activate Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What object contains the cookie destinations in the doPostbacks response to an analytics call from a website?","presented_options":["\"server\"","\"dests\"","\"urls\"","\"stuff\""],"correct_options":["\"stuff\""],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Activate Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Suppose you want to add and map a segment to a destination in AAM. After you've selected a Segment and clicked on 'Add Selected Segments', what do you do next?","presented_options":["Choose the Segments tab from the left-hand menu","Enter a value for the mapping","Choose a destination from a drop-down list","Select Basic Information within the Destinations section"],"correct_options":["Enter a value for the mapping"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Activate Audiences","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What are the two complementary qualification methods used in AAM to ensure full segment coverage across a publisher's entire use base?","presented_options":["Segment qualification based on real-time data collection","Segment qualification based on the number of repeat visitors","Users are qualified based on new segment rule criteria","Segment qualification based on best estimates"],"correct_options":["Users are qualified based on new segment rule criteria","Segment qualification based on real-time data collection"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"In viewing the Segment Population graph in AAM, you can see which of the following?","presented_options":["All visitors who qualified within a specific time range","The unique visitors in real-time within a specific time range","The number of ad impressions a visitor has been served","All visitors currently qualified for the segment"],"correct_options":["All visitors who qualified within a specific time range","The unique visitors in real-time within a specific time range","The number of ad impressions a visitor has been served","All visitors currently qualified for the segment"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What does a General Report do to help identify and solve your business issues? Select the 4 correct answers.","presented_options":["It shows outdated segments or traits that can be removed","It pinpoints both strong and poor performance of traits and segments","It exports data into .csv format for further analysis and sharing","It suggests new data segments combined from existing sets","It highlights lifeless data that requires fixes in order to perform","It removes conflicting traits in order to clean up data"],"correct_options":["It shows outdated segments or traits that can be removed","It exports data into .csv format for further analysis and sharing","It highlights lifeless data that requires fixes in order to perform","It pinpoints both strong and poor performance of traits and segments"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which report type best highlights the performance of your traits, segments and destinations?","presented_options":["General Report","Trend Report","Overlap Report","Combination Report"],"correct_options":["General Report"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What does a Trend Report do to help identify and solve your business issues? Select the 3 correct answers.","presented_options":["Suggests new data segments combined from existing sets","Highlights when trends started or stopped collecting data","Exports data into .csv format for further analysis and sharing","Shows trends you might be able to act upon","Removes conflicting traits in order to clean up data"],"correct_options":["Shows trends you might be able to act upon","Highlights when trends started or stopped collecting data","Exports data into .csv format for further analysis and sharing"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What types of General Reports can you run?","presented_options":["Combination","Through Date","Destination","Traits","Segment"],"correct_options":["Segment","Destination","Traits"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"You can add additional traits in the Editor by doing which two of the following?","presented_options":["Searching for traits manually","Browsing all traits to choose one","Reviewing traits used in segments for the last 6 months","Splitting traits into sub-traits"],"correct_options":["Searching for traits manually","Browsing all traits to choose one"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Track Segment Population","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What does the scatter plot for Segment Performance data show?","presented_options":["Number of conversions per day","Frequency of clicks per segment","Unique user reach per segement","Number of clicks versus impressions"],"correct_options":["Number of clicks versus impressions"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Manage Segment Performance","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How might you use the results of an Overlap Report?","presented_options":["Configure previously unknown traits","Use the slider in the report to reduce overlap","Modify segment definitions","Adjust segment mappings to destinations","Combine segments to make a super-segment"],"correct_options":["Modify segment definitions","Adjust segment mappings to destinations"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Manage Segment Performance","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What use cases are available for data feeds in Audience Marketplace? Select the 3 correct answers.","presented_options":["Modeling","Activation","Segments and Overlap","Analytics","Audience Lab"],"correct_options":["Modeling","Activation","Segments and Overlap"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Manage Segment Performance","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which analytics report allows you to discover the optimal balance between the number of served impressions and conversions?","presented_options":["Segment Performance","Optimal Frequency","Segment Dashboard","Unique User Reach"],"correct_options":["Optimal Frequency"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Manage Segment Performance","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which of the following best describes the outcome of algorithmic modeling in AAM?","presented_options":["Prospects similar to high-value base segment","Liklihood that someone will convert after a certain number of impressions","Optimal budget allocation across media channels","Drop-off at stages in a conversion funnel"],"correct_options":["Prospects similar to high-value base segment"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Manage Segment Performance","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What is the source of data for the Advertiser Analytics reports in Audience Manager?","presented_options":["Data from Adobe Analytics","Media pixel fires from ad placement","Log files from the ad server","Lifecycle data from the edge servers"],"correct_options":["Log files from the ad server"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Manage Segment Performance","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which metric in the Audience Lab report output should a marketer use to select the test group with the best return on ad spend (ROAS)?","presented_options":["Profiles","Conversions","Conversion Rate","Percent Profiles"],"correct_options":["Conversion Rate"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Conduct A/B Tests using Audience Lab","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which of the following are deployed before Audience Lab in the activation maturity model? Select the 2 correct answers.","presented_options":["Export controls","Data exports to BI tools","Algorithmic modeling","Media activation"],"correct_options":["Export controls","Media activation"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Conduct A/B Tests using Audience Lab","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How can a marketer be benefitted by shifting budget and cookie pool to the test group with the highest efficiency following an A/B test?","presented_options":["Increased conversions","Decreased time to conversions","Higher volume","Lower cost per order"],"correct_options":["Lower cost per order"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Conduct A/B Tests using Audience Lab","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What should remain constant in order to compare lookalike models in Audience Lab?","presented_options":["Audience allocation","Model accuracy","Targeting platform","Model reach"],"correct_options":["Targeting platform"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Conduct A/B Tests using Audience Lab","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What might a marketer hope to improve on by working with multiple DSPs? Select the 2 correct answers.","presented_options":["Scale","Price","Loyalty","Availability"],"correct_options":["Scale","Price"],"exam_topics":["Data Flow Quality Assurance"],"question_source":"Test: Audience Manager: Conduct A/B Tests using Audience Lab","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What use cases are available for data feeds in Audience Marketplace? Select the 3 correct answers.","presented_options":["Modeling","Audience Lab","Activation","Segments and Overlap","Daily Trait Variation"],"correct_options":["Activation","Segments and Overlap","Modeling"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Scale Data Using Audience Marketplace","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What type of user information is gathered from sources outside an organization and its affiliates?","presented_options":["Third-party data","First-party data","Second-party data","Server-side data"],"correct_options":["Third-party data"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Scale Data Using Audience Marketplace","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which of the following best defines the term look-alike model?","presented_options":["A high-value segment using first-, second-, and third-party data to find users similar to the base segment","A pre-determined value assigned and used to calculate the liklihood that someone will take a desired action","An algorithm that determines how much credit to attribute to each touch point","An algorithm that determines the best budget to give each media channel"],"correct_options":["A high-value segment using first-, second-, and third-party data to find users similar to the base segment"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Scale Data Using Audience Marketplace","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What Audience Manager feature helps brands scale their first-party data?","presented_options":["Audience Marketplace"],"correct_options":["Audience Marketplace"],"exam_topics":["Activation"],"question_source":"Test: Audience Manager: Scale Data Using Audience Marketplace","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How can you use the information in an Overlap Report to increase the reach of your campaign?","presented_options":["Find a segment intersection with high-value users and create a new segment for them","Find a segment intersection with a high overlap percentage to target existing users","Find a segment intersection with a low overlap percentage to identify new unique users"],"correct_options":["Find a segment intersection with a low overlap percentage to identify new unique users"],"exam_topics":["Analysis"],"question_source":"Test: Audience Manager: Scale Data Using Audience Marketplace","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which report gives the most helpful data about the unique users in your segments and traits?","presented_options":["General Report","Segment Report","Overlap Report"],"correct_options":["Trend Report"],"exam_topics":[],"question_source":"Test: Audience Manager: Scale Data Using Audience Marketplace","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Once you install an extension, where do you go to use the extention functionality?","presented_options":["Rules","Data Elements","Publishing","Adapters"],"correct_options":["Rules"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Extentions are like apps that run on the Launch platform. True or False?","presented_options":["True","False"],"correct_options":["True"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How many libraries/builds can you have in the Staging/Approval process?","presented_options":["Unlimited","5","1","10"],"correct_options":["1"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Which extention is available when creating events or conditions?","presented_options":["Target","ContextHub","Core","Analytics"],"correct_options":["Core"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"In Launch by Adobe, you can't see the extentions options within the rules unless you have installed the specific extention. True or false?","presented_options":["True","False"],"correct_options":["True"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"The 'Add users by bulk' function allows you to add users, but you have to set their specific rights individually. True or false?","presented_options":["True","False"],"correct_options":["False"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How many production environments can you create within Launch by Adobe?","presented_options":["4","Unlimited","1","2"],"correct_options":["1"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Data elements are based on extentions you have installed. True or false?","presented_options":["True","False"],"correct_options":["True"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Where is the ideal place to get information into a Data Element?","presented_options":["CSS","HTML","Data Layer","Session Storage"],"correct_options":["Data Layer"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"In the Group permissions window of the Experience Cloud Administrative Console, what is the purpose of the Auto-include?","presented_options":["It automatically replicates the group settings across all Launch properties","It automatically grants access to all new properties at the same permission level","It automatically includes the custom settings from the point product user management settings"],"correct_options":["It automatically grants access to all new properties at the same permission level"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Where do you get the Embed Code within Launch by Adobe?","presented_options":["In the Extension window, once you have created the Environment","In the Adapter window, once you have created the Environment","In the Environments window, once you have created the Environment","In the Property window, once you have created the Environment"],"correct_options":["In the Environments window, once you have created the Environment"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"With which extention does a new property come installed?","presented_options":["Adobe Target","Analytics","Core","Experience Cloud ID Service"],"correct_options":["Core"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Who can approve moving libraries from submitted to approved?","presented_options":["All users","Anyone","Analytics Admins","Launch Admins"],"correct_options":["Launch Admins"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"Updates to extensions happen automatically. True or false?","presented_options":["True","False"],"correct_options":["False"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"What is the correct order when building a rule in Launch by Adobe?","presented_options":["Actions, conditions, event, exceptions","Exceptions, conditions, event, actions","Event, actions, conditions, exceptions","Event, conditions, exceptions, actions"],"correct_options":["Event, conditions, excepions, actions"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}, 
+{
+"question_text":"How many libraries/builds can you have at any given time?","presented_options":["5","1","It's based on how many environments you have","unlimited"],"correct_options":["unlimited"],"exam_topics":["Platform Configuration"],"question_source":"Test: Audience Manager: Using Audience Launch","chosen_options": [],"IsAnswered": false,"IsCorrect": false,"IsInReviewMode": false
+}
+     
+  ]
+}

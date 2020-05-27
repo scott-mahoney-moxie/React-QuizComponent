@@ -18,13 +18,17 @@ class Quiz extends Component {
 
     }
 
-    handleResetClick(){
+    clearOutQuizSelections(){
         this.props.quiz.Questions.forEach((item) => {
             item.IsAnswered = false;
             item.IsCorrect = false;
             item.chosen_options = [];
           })
-        
+    }
+
+    handleResetClick(){
+        this.clearOutQuizSelections();
+
         this.props.quiz.Questions = this.props.quiz.Questions.shuffle();
         this.props.quiz.Questions.map( (arr) => {return arr.presented_options =  arr.presented_options.shuffle()});
 
@@ -51,6 +55,7 @@ class Quiz extends Component {
 
 
     handleSetupClick(){
+        this.clearOutQuizSelections();
 
         this.props.resetClickHandler();
     }

@@ -4,7 +4,7 @@ import QuizStart from './QuizStart.js'
 import './App.css'
 import './Quiz-Utils.js'
 
-let quizData = require('./quiz_analytics_bp.json')
+let quizData = require('./quiz_campaign_bp.json')
 
 class App extends Component {
 
@@ -53,6 +53,14 @@ handleNumberOfQuestionsChanged(inputNumberOfQuestions){
 generateQuestionsBasedOnTopics(numberOfQuestions){
 
   var fullArr = [];
+  
+  // if request is for all questions stored, return all of them, not by category(avoids duplicates based on limited topic questions)
+  if (numberOfQuestions === quizData.quiz_questions.count){
+	
+    fullArr = quizData.quiz_questions.shuffle();
+	return fullArr;
+  }
+  
   this.state.Topics.forEach(topic =>{
     console.log('TOPIC: ' + topic.key + ' % ' + topic.percent);
     var numTopicQuestions;
